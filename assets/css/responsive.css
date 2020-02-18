@@ -1,0 +1,137 @@
+@media (max-width: 768px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 58px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #fff;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+    padding-top: 25px;
+  }
+
+  .offcanvas-collapse.open {
+    left: 0;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-about__grid {
+ 
+    grid-template-columns: 1fr;
+ 
+}
+  .main-footer__form {
+    margin-top: 30px;
+  }
+
+  .main-time__body {
+
+    grid-template-columns: 1fr;
+
+  }
+  .main-time__card:nth-child(1){
+    transform: none;
+  
+
+  }
+  .main-time__card:nth-child(2){
+    transform: none;
+ 
+
+  }
+  .main-time__card:nth-child(3){
+    transform: none;
+  
+
+  }
+  .main-time__card:nth-child(4){
+    transform: none;
+   
+
+  }
+  .main-time__card:nth-child(5){
+    transform: none;
+
+
+  }
+  .main-time__card p{
+    display: initial;
+    
+    }
+    .timeline {
+      position: relative;
+      padding: 0;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer__content {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-how h3 {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-banner__content .slick-dots {
+    left: 45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner__content .slick-dots {
+    left: 45%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-banner__content .slick-dots {
+    left: 35%;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-client__content .slick-dots {
+    left: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-client__content .slick-dots {
+    left: 35%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-client__content .slick-dots {
+    left: 35%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-top__header {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .nav-top__header {
+    display: none;
+  }
+}
