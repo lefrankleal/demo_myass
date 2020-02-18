@@ -327,12 +327,23 @@ body {
   height: 546px;
   z-index: 111;
   transform: translateX(-50%);
-  top: -54px;
+  top: -61px;
+}
+
+.main-cafe_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slick-slide img {
   display: block;
   width: 212px;
-  margin-right: 30px;
+  margin-right: 50px;
+}
+.screen-area{
+  padding: 100px 0 100px;
 }
 /* .main-portfolio__content_mobile {
     position: absolute;
@@ -340,6 +351,18 @@ body {
     top: -14%;
 } */
 
+.main-cafe__text{
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.main-cafe__text a{
+  box-shadow: 0 0 5px #00000061;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #00cf78;
+}
 .main-client__content .slick-dots li button:before {
   color: gray;
   content: '';
