@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 18/02/2020 17:18
+  	Creation date: 21/02/2020 14:17
   	*/
 
 @font-face {
@@ -30,12 +30,23 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-analysis:before { content: "\f100"; }
-.flaticon-discussion:before { content: "\f101"; }
-.flaticon-brain:before { content: "\f102"; }
-.flaticon-presentation:before { content: "\f103"; }
-.flaticon-bulb:before { content: "\f104"; }
-.flaticon-conversation:before { content: "\f105"; }
-.flaticon-report:before { content: "\f106"; }
-.flaticon-profits:before { content: "\f107"; }
-.flaticon-null:before { content: "\f108"; }
+.flaticon-brain:before { content: "\f100"; }
+.flaticon-conversation:before { content: "\f101"; }
+.flaticon-profits:before { content: "\f102"; }
+.flaticon-null:before { content: "\f103"; }
+.flaticon-idea:before { content: "\f104"; }
+.flaticon-3d-cube:before { content: "\f105"; }
+.flaticon-shape-builder:before { content: "\f106"; }
+.flaticon-shape:before { content: "\f107"; }
+.flaticon-bar-chart:before { content: "\f108"; }
+.flaticon-application:before { content: "\f109"; }
+.flaticon-web-programming:before { content: "\f10a"; }
+.flaticon-web:before { content: "\f10b"; }
+.flaticon-recycle:before { content: "\f10c"; }
+.flaticon-electricity:before { content: "\f10d"; }
+.flaticon-video-conference:before { content: "\f10e"; }
+.flaticon-internet:before { content: "\f10f"; }
+.flaticon-qa:before { content: "\f110"; }
+.flaticon-technical-support:before { content: "\f111"; }
+.flaticon-help:before { content: "\f112"; }
+.flaticon-compass:before { content: "\f113"; }

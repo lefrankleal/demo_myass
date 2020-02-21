@@ -18,7 +18,11 @@
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/img/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="assets/js/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
@@ -26,11 +30,12 @@
   <!-- preloader -->
   <!-- <div id="pre-loader">
     <div class="pre-loader-container">
-        <h2 class="section-title text-center preload-logo wow bounceIn">
-          <img  src="img/favicon.png" alt="Logotipo ASS" title="Logo ASS" style="padding-bottom: 50px; width: 200px;">
-          <br><br>
-        </h2>
-        <div class="loader wow" ></div>
+      <h2 class="section-title text-center preload-logo wow bounceIn">
+        <img src="assets/img/iso-color.png" alt="Logotipo ASS" title="Logo ASS"
+          style="padding-bottom: 50px; width: 200px;">
+        <br><br>
+      </h2>
+      <div class="loader wow"></div>
     </div>
   </div> -->
 
@@ -91,8 +96,10 @@
           </div>
         </div>
         <div class="main-banner__img">
-          <img src="assets/img/banner.png">
-          <!-- <video class="d-none d-sm-block" autoplay loop width="100%" muted=""  style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"  src="assets/img/banner.mov"> -->
+          <!-- <img src="assets/img/banner.png"> -->
+          <video class="d-none d-sm-block" autoplay loop width="100%" muted=""
+            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
+            src="assets/img/banner.mp4">
           </video>
 
 
@@ -103,9 +110,9 @@
 
   </div>
 
-  <section class="intro">
+  <div class="intro">
     <p>The key of joy is desobedience" A. Crowley</p>
-  </section>
+  </div>
   <!-- about -->
   <section class="main-about container">
     <div class="title-general">
@@ -120,7 +127,7 @@
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
-            <span class="flaticon-conversation"></span>
+            <span class="flaticon-shape"></span>
           </div>
         </div>
         <div class="main-about__title">
@@ -151,7 +158,7 @@
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
-            <span class="flaticon-brain"></span>
+            <span class="flaticon-idea"></span>
           </div>
         </div>
         <div class="main-about__title">
@@ -217,69 +224,197 @@
   <!-- about -->
 
   <!-- timeline -->
-  <section class="main-time_line container">
-    <div class="title-general">
+  <section class="main-time_line ">
+    <div class="title-general container">
       <p>Nuestro Proceso y Valor Agregado!</p>
       <center> <span> Transparentes y directos!</span></center>
     </div>
 
-    <div class="timeline">
-      <div class="main-time__body">
 
-        <div class="main-time__card">
-          <div class="main-time__content">
-            <span>Workshop</span>
-            <p style="display: initial;">Visualizar su idea/proyecto,
-              preparar documentos y
-              confirmar cotización!</p>
-          </div>
-        </div>
 
-        <div class="main-time__card">
-          <div class="main-time__content">
-            <span>Wireframing</span>
-            <p>Nos sentamos con usted! a
-              preparar ese super Mockup,
-              creamos esa guia visual y
-              esperamos la acción de
-              nuestro equipo de diseño!</p>
-          </div>
-        </div>
+    <img class="background-ola" src="assets/img/clientes.png" alt="">
+    <!-- tabs -->
+    <div class="tabset container">
+      <!-- Tab 1 -->
+      <input type="radio" name="tabset" id="tab7" aria-controls="marzen" checked>
+      <label for="tab7">Opcion 1</label>
+      <!-- Tab 2 -->
+      <input type="radio" name="tabset" id="tab8" aria-controls="rauchbier">
+      <label for="tab8">Opcion 2</label>
 
-        <div class="main-time__card">
-          <div class="main-time__content">
-            <span>Project Kickoff & Diseño</span>
-            <p>Conocera a nuestro equipo! Le
-              daremos una especie de guia
-              sobre el proceso de desarrollo
-              a iniciar y estara a un paso de
-              aprobar el diseño final de su
-              proyecto.</p>
-          </div>
-        </div>
-        <div class="main-time__card">
-          <div class="main-time__content">
-            <span>Desarrollo y Pruebas QA</span>
-            <p>Usando la metodología SCRUM, nuestro
-              equipo desarrollará su proyecto
-              conectando todo el diseño aprobado, una
-              vez hecho esto, haremos Pruebas Alfa y
-              Beta con usted y continuaremos con
-              nuestra Etapa de QA.</p>
-          </div>
-        </div>
 
-        <div class="main-time__card">
-          <div class="main-time__content">
-            <span>Lanzamiento/entrega y Soporte*</span>
-            <p>Su proyecto esta listo para ser
-              lanzado! Recuerde que es
-              necesario darle el soporte y
-              mantenimiento necesario!</p>
+      <div class="tab-panels">
+        <section id="marzen" class="tab-panel">
+
+          <div class="col-sm-12">
+            <div class="panel general-panel circle-pannel">
+              <div class="panel-heading">
+                <ul class="nav nav-tabs circle-container">
+                  <li class="active"><a data-toggle="tab" href="#tab1"><i class="flaticon-video-conference"
+                        aria-hidden="true"></i></a></li>
+                  <li><a data-toggle="tab" href="#tab2"><i class="flaticon-internet" aria-hidden="true"></i></a></li>
+                  <li><a data-toggle="tab" href="#tab3"><i class="flaticon-compass" aria-hidden="true"></i></a></li>
+                  <li><a data-toggle="tab" href="#tab4"><i class="flaticon-qa" aria-hidden="true"></i></a></li>
+                  <li><a data-toggle="tab" href="#tab5"><i class="flaticon-help" aria-hidden="true"></i></a></li>
+                  <!-- <li><a data-toggle="tab" href="#tab6"><i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                 <li><a data-toggle="tab" href="#tab7"><i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                 <li><a data-toggle="tab" href="#tab8"><i class="fa fa-bandcamp" aria-hidden="true"></i></a></li> -->
+                </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="tab1" class="tab-pane in active">
+                    <h4>Workshop</h4>
+                    <div class="row">
+                      <p class="col-sm-12">
+                        Visualizar su idea/proyecto,
+                        preparar documentos y
+                        confirmar cotización!
+                      </p>
+                    </div>
+                  </div>
+                  <div id="tab2" class="tab-pane">
+                    <h4>Wireframing</h4>
+                    <div class="row">
+                      <p class="col-sm-12">
+                        Nos sentamos con usted! a
+                        preparar ese super Mockup,
+                        creamos esa guia visual y
+                        esperamos la acción de
+                        nuestro equipo de diseño!
+                    </div>
+                  </div>
+                  <div id="tab3" class="tab-pane">
+                    <h4>Project Kickoff & Diseño</h4>
+                    <div class="row">
+                      <p class="col-sm-12">
+                        Conocera a nuestro equipo! Le
+                        daremos una especie de guia
+                        sobre el proceso de desarrollo
+                        a iniciar y estara a un paso de
+                        aprobar el diseño final de su
+                        proyecto.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="tab4" class="tab-pane">
+                    <h4>Desarrollo y Pruebas QA</h4>
+                    <div class="row">
+                      <p class="col-sm-12">
+                        Usando la metodología SCRUM, nuestro
+                        equipo desarrollará su proyecto
+                        conectando todo el diseño aprobado, una
+                        vez hecho esto, haremos Pruebas Alfa y
+                        Beta con usted y continuaremos con
+                        nuestra Etapa de QA.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="tab5" class="tab-pane">
+                    <h4>Lanzamiento/entrega y Soporte</h4>
+                    <div class="row">
+                      <p class="col-sm-12">
+                        Su proyecto esta listo para ser
+                        lanzado! Recuerde que es
+                        necesario darle el soporte y
+                        mantenimiento necesario!
+                      </p>
+                    </div>
+                  </div>
+                  <!-- <div id="tab6" class="tab-pane">
+                    <h4>6th Tab</h4>
+                    <div class="row">
+                       <p class="col-sm-12">
+                          Lorem ipsum dolor sit amet, nec ad dolorem singulis conceptam, quo eu assum vituperatoribus
+                       </p>
+                    </div>
+                 </div>
+                 <div id="tab7" class="tab-pane">
+                    <h4>7th Tab</h4>
+                    <div class="row">
+                       <p class="col-sm-12">
+                          Lorem ipsum dolor sit amet, nec ad dolorem singulis conceptam, quo eu assum vituperatoribus
+                       </p>
+                    </div>
+                 </div>
+                 <div id="tab8" class="tab-pane">
+                    <h4>8th Tab</h4>
+                    <div class="row">
+                       <p class="col-sm-12">
+                          Lorem ipsum dolor sit amet, nec ad dolorem singulis conceptam, quo eu assum vituperatoribus
+                       </p>
+                    </div>
+                 </div> -->
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+        <section id="rauchbier" class="tab-panel">
+          <div class="timeline">
+            <div class="main-time__body">
+
+              <div class="main-time__card">
+                <div class="main-time__content">
+                  <span>Workshop</span>
+                  <p style="display: initial;">Visualizar su idea/proyecto,
+                    preparar documentos y
+                    confirmar cotización!</p>
+                </div>
+              </div>
+
+              <div class="main-time__card">
+                <div class="main-time__content">
+                  <span>Wireframing</span>
+                  <p>Nos sentamos con usted! a
+                    preparar ese super Mockup,
+                    creamos esa guia visual y
+                    esperamos la acción de
+                    nuestro equipo de diseño!</p>
+                </div>
+              </div>
+
+              <div class="main-time__card">
+                <div class="main-time__content">
+                  <span>Project Kickoff & Diseño</span>
+                  <p>Conocera a nuestro equipo! Le
+                    daremos una especie de guia
+                    sobre el proceso de desarrollo
+                    a iniciar y estara a un paso de
+                    aprobar el diseño final de su
+                    proyecto.</p>
+                </div>
+              </div>
+              <div class="main-time__card">
+                <div class="main-time__content">
+                  <span>Desarrollo y Pruebas QA</span>
+                  <p>Usando la metodología SCRUM, nuestro
+                    equipo desarrollará su proyecto
+                    conectando todo el diseño aprobado, una
+                    vez hecho esto, haremos Pruebas Alfa y
+                    Beta con usted y continuaremos con
+                    nuestra Etapa de QA.</p>
+                </div>
+              </div>
+
+              <div class="main-time__card">
+                <div class="main-time__content">
+                  <span>Lanzamiento/entrega y Soporte*</span>
+                  <p>Su proyecto esta listo para ser
+                    lanzado! Recuerde que es
+                    necesario darle el soporte y
+                    mantenimiento necesario!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
+
     </div>
+    <!-- tbas prueba -->
+
   </section>
   <!-- timeline -->
 
@@ -287,8 +422,8 @@
   <!-- servicios -->
   <section class="main-services container">
     <div class="title-general">
-      <p>Nuestro Proceso y Valor Agregado!</p>
-      <center> <span> Transparentes y directos!</span></center>
+      <p>Servicios</p>
+
     </div>
     <div class="main-services_grid">
       <div class="main-services_card">
@@ -309,9 +444,7 @@
                       <li> React Native para proyectos especiales </li>
                       <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
                         Assurance)</li>
-                      <li> Diseño intuitivo e impactante por medio de UX/UI (User
-                        Experience/User Interface) unico para cada proyecto</li>
-                      <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad</li>
+
                     </ul>
                   </p>
                 </div>
@@ -324,6 +457,9 @@
                 </div>
               </div>
               <div class="flipbox_content">
+                <li> Diseño intuitivo e impactante por medio de UX/UI (User
+                  Experience/User Interface) unico para cada proyecto</li>
+                <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad</li>
                 <div class="main-service-icon">
                   <img src="assets/img/iconos_servicios/android2.png" alt="">
                   <img src="assets/img/iconos_servicios/icon.png" alt="">
@@ -351,17 +487,15 @@
                     <ul>
                       <li> Qué es? Un programa tipo servidor-cliente que incluye una interfaz para
                         usuarios y solo se puede experimentar en navegadores como Chrome.
-
-
-
                       </li>
-                      <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
-                        Assurance) antes del lanzamiento oficial! </li>
-
                       <li>
                         Diseño intuitivo e impactante por medio de UX/UI (User Experience/User
-                        Interface) unico para cada proyecto</li>
-                      <!-- <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad continua)</li> -->
+                        Interface) unico para cada proyecto
+
+                      </li>
+
+
+
                     </ul>
                   </p>
                 </div>
@@ -374,6 +508,13 @@
                 </div>
               </div>
               <div class="flipbox_content">
+                <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad continua)</li>
+                <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
+                  Assurance) antes del lanzamiento oficial! </li>
+
+                <li>
+                  Diseño intuitivo e impactante por medio de UX/UI (User Experience/User
+                  Interface) unico para cada proyecto</li>
                 <div class="main-service-icon main-service-icon-img">
                   <img class="wi" src="assets/img/iconos_servicios/a.png" alt="">
                   <img src="assets/img/iconos_servicios/airbnb (2).png" alt="">
@@ -407,9 +548,7 @@
                       </li>
                       <li> Prototipado en tiempo record! (Mockup)</li>
                       <li> Enfoque de todos los detalles particulares</li>
-                      <li> User Flow - Wireframes</li>
-                      <li>
-                        Prototipo Dinamico/Interactivo (Adobe XD/InVision)</li>
+
                     </ul>
                   </p>
                 </div>
@@ -422,6 +561,9 @@
                 </div>
               </div>
               <div class="flipbox_content">
+                <li> User Flow - Wireframes</li>
+                <li>
+                  Prototipo Dinamico/Interactivo (Adobe XD/InVision)</li>
                 <!-- <img width="100px" class="one" src="assets/img/iconos_servicios/web.png" alt=""> -->
                 <img class="one" src="assets/img/iconos_servicios/invision.png" alt="">
                 <img class="two" width="30px" src="assets/img/iconos_servicios/adobe-xd.png" alt="">
@@ -454,14 +596,7 @@
                       </li>
                       <li> Geolocalización/GPS Tracking
                       </li>
-                      <li> Gmail/Amazon/Facebook Log Ins
-                      </li>
-                      <li> Emailing (Emails Automatizados)
-                      </li>
-                      <li>SEO (aplica para Web Apps)
-                        <!-- Google Analytics (aplica para Web Apps)
-                        Otros/Definidos por el cliente -->
-                      </li>
+
                     </ul>
                   </p>
                 </div>
@@ -474,6 +609,14 @@
                 </div>
               </div>
               <div class="flipbox_content">
+                <li> Gmail/Amazon/Facebook Log Ins
+                </li>
+                <li> Emailing (Emails Automatizados)
+                </li>
+                <li>SEO (aplica para Web Apps)
+                  <!-- Google Analytics (aplica para Web Apps)
+                  Otros/Definidos por el cliente -->
+                </li>
                 <!-- <img width="100px" class="one" src="assets/img/iconos_servicios/web.png" alt=""> -->
                 <img class="one" src="assets/img/iconos_servicios/invision.png" alt="">
                 <img class="two" width="30px" src="assets/img/iconos_servicios/adobe-xd.png" alt="">
@@ -489,13 +632,192 @@
   </section>
   <!-- servicios -->
 
-  <section>
+  <section class="portfolio">
     <div class="container">
-      <div class="title-general">
+      <div class="title-general title-general-porfolio">
         <p>Portafolio</p>
-
       </div>
 
+<!--Feature-area/-->
+
+<section class="angle-bg sky-bg section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active row">
+              <div class="v-center">
+                <div class="col-xs-12 col-md-6">
+                  <div class="caption-title" data-animation="animated fadeInUp">
+                    <h2>Vivoo</h2>
+                  </div>
+                  <div class="caption-desc mb-5" data-animation="animated fadeInUp">
+                    <p>Es un canal innovador de venta para intermediarios pequeños y medianos de seguros.
+                      Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingresos</p>
+                  </div>
+                  <div class="caption-button" data-animation="animated fadeInUp">
+                    <a href="#" class="button " >  Ver más</a>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="top">
+                    <div class="caption-photo one" data-animation="animated fadeInRight">
+                      <div class="phone-mock">
+                        <img src="assets/img/screen-slider.png" alt="">
+                      </div>
+                      <div class="screen">
+                        <img src="assets/img/phoe.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="top">
+                    <div class="caption-photo two" data-animation="animated fadeInRight">
+                      <div class="phone-mock phone-mock-second">
+                        <img src="assets/img/screen-slider.png" alt="">
+                      </div>
+                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item row">
+                            <div class="v-center">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="caption-title" data-animation="animated fadeInUp">
+                                        <h2>ChinChin</h2>
+                                    </div>
+                                    <div class="caption-desc" data-animation="animated fadeInUp">
+                                        <p>ChinChin es una aplicación móvil donde podrás hacer pedidos de licores a domicilio con precios competitivos en la cuidad de Bogotá.</p>
+                                    </div>
+                                    <div class="caption-button" data-animation="animated fadeInUp">
+                                        <a href="#" class="button">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                  <div class="top">
+                                    <div class="caption-photo one" data-animation="animated fadeInRight">
+                                      
+                                      <img width="500px" src="assets/img/dashboard_full_2.png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                  <div class="top">
+                                    <div class="caption-photo two" data-animation="animated fadeInRight">
+                                      <!-- <div class="phone-mock phone-mock-second">
+                                        <img src="assets/img/screen-slider.png" alt="">
+                                      </div> -->
+                                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="v-center">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="caption-title" data-animation="animated fadeInUp">
+                                        <h2>Tiver</h2>
+                                    </div>
+                                    <div class="caption-desc" data-animation="animated fadeInUp">
+                                        <p>Esta app te permite disfrutar de los servicios personales que utilizamos todos los días, desde la comodidad del lugar que estes.</p>
+                                    </div>
+                                    <div class="caption-button" data-animation="animated fadeInUp">
+                                        <a href="#" class="button">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                  <div class="top">
+                                    <div class="caption-photo one" data-animation="animated fadeInRight">
+                                      <!-- <div class="phone-mock">
+                                        <img src="assets/img/screen-slider.png" alt="">
+                                      </div> -->
+                                      <img width="500px" src="assets/img/dashboard_full_3.png" alt="">
+                                      <!-- <div class="screen">
+                                        <img src="assets/img/phoe.png" alt="">
+                                      </div> -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                  <div class="top">
+                                    <div class="caption-photo two" data-animation="animated fadeInRight">
+                                      <!-- <div class="phone-mock phone-mock-second">
+                                        <img src="assets/img/screen-slider.png" alt="">
+                                      </div> -->
+                                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="v-center">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="caption-title" data-animation="animated fadeInUp">
+                                        <h2>Mímeza App</h2>
+                                    </div>
+                                    <div class="caption-desc" data-animation="animated fadeInUp">
+                                        <p>Mimeza es la nueva aplicación para hacer reservas en restaurantes de Bogotá</p>
+                                    </div>
+                                    <div class="caption-button" data-animation="animated fadeInUp">
+                                        <a href="#" class="button">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                  <div class="top">
+                                    <div class="caption-photo one" data-animation="animated fadeInRight">
+                                      <div class="phone-mock">
+                                        <img src="assets/img/screen-slider.png" alt="">
+                                      </div>
+                                      <div class="screen">
+                                        <img src="assets/img/phoe.png" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                  <div class="top">
+                                    <div class="caption-photo two" data-animation="animated fadeInRight">
+                                      <div class="phone-mock phone-mock-second">
+                                        <img src="assets/img/screen-slider.png" alt="">
+                                      </div>
+                                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+          </div>
+          <!-- Indicators -->
+          <ol class="carousel-indicators caption-indector">
+            <li data-target="#caption_slide" data-slide-to="0" class="active">
+              <strong>Vivoo</strong>App movil.
+            </li>
+            <li data-target="#caption_slide" data-slide-to="1">
+              <strong>ChinChin </strong>Aplicacion movil.
+            </li>
+            <li data-target="#caption_slide" data-slide-to="2">
+              <strong>Tiver</strong>consectetur adipisicing elit.
+            </li>
+            <li data-target="#caption_slide" data-slide-to="3">
+              <strong>Mímeza App </strong>Aplicacion web
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--Feature-area/-->
+
+
+      <!-- 
       <div class="screen-area bg-gray ptb--100" id="screenshot">
         <div class="container relative">
 
@@ -526,26 +848,13 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- cafe -->
-  <section class="main-cafe container">
-    <div class="main-cafe_grid">
-      <div class="main-cafe__img">
-        <img src="assets/img/cafe.png" alt="">
-      </div>
-      <div class="main-cafe__text">
-        <p>Hablemos! Matcha? Café? Nosotros invitamos!</p>
-        <a href="#">Hablemos</a>
-      </div>
+      </div> -->
     </div>
   </section>
 
 
-
-
-  <section class="main-client" id="client">
+  <!-- clienes -->
+  <section class="main-client mt-5" id="client">
     <div class="container">
       <div class="title-general">
         <p>Nuestros clientes</p>
@@ -605,82 +914,271 @@
       </div>
     </div>
   </section>
-  <!-- <footer class="main-footer">
-    <div class="container">
-      <div class="main-footer__content">
-        <div class="main-footer__contact">
-          <div class="main-footer__info">
-            <div class="main-footer__about">
-              <div class="main-footer__subtitle">
-                Síguenos en nuestras redes sociales
-              </div>
-            </div>
-            <div class="main-footer__content-contact">
-              <div class="main-footer__dates">
-                <a class="mr-3" href="#">
-                    <i class="fa fa-phone"></i>
-                    <span>(+569) 0 123 45 67</span>
-                  </a>
-                <a href="#">
-                    <i class="fa fa-envelope"></i>
-                    <span>hola@fuerzadeventaremota.cl</span>
-                  </a>
-              </div>
-              <div class="main-footer__redes">
-                <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-footer__form">
-          <div class="main-footer__subtitle">
-            Contáctanos
-          </div>
-          <form>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Empresa" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="phone">
-            </div>
-            <div class="btn-box float-right">
-              <button class="btn_custom btn--medium btn--filled">
-                  Enviar
-                </button>
-            </div>
-          </form>
-        </div>
+  <!-- cafe -->
+  <section class="main-cafe container">
+    <div class="main-cafe_grid">
+      <div class="main-cafe__img">
+        <img src="assets/img/cafe.png" alt="">
       </div>
-      <div class="main-footer__copy">
-        <p>
-          <a href="http://cmarketing.cl/">
-              Contact Marketing 
-            </a> Todos los derechos Reservados
-        </p>
+      <div class="main-cafe__text">
+        <p>Hablemos! Matcha? Café? Nosotros invitamos!</p>
+        <a  data-toggle="modal" data-target="#exampleModalCenter" href="#">Hablemos</a>
       </div>
     </div>
-  </footer> -->
+  </section>
 
-  <script src="assets/js/jquery.min.js"></script>
+
+<section class="main-contact">
+  <div class="container">
+    <div class="title-general">
+      <p>Contacto</p>
+    </div>
+    <!-- <div class="main-contact--grid">
+      <div class="main-contact-item">
+
+            
+        <form class="form-cafe--contact ">
+          <div class="row" style="    margin-bottom: 30px;">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre y apellido">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="col">
+              <textarea class="form-control" id="Tu mensaje" placeholder="Tu mensaje" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="btn-general">
+            <a href="">Enviar</a>
+          </div>
+        </form>
+      </div>
+      <div class="main-contact-item">
+        
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<footer>
+
+</footer>
+
+  <!-- <script src="assets/js/jquery.min.js"></script> -->
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/setting-slick.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!--Plugin-JS-->
+  <script src="assets/js/owl.carousel.min.js"></script>
 
+  <script src="assets/js/scrollUp.min.js"></script>
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+  <script src="assets/js/detectmobilebrowser.js"></script>
+  <script>
+    var tabChange = function () {
+      var tabs = $('.circle-container > li');
+      var active = tabs.filter('.active');
+      var next = active.next('li').length ? active.next('li').find('a') : tabs.filter(':first-child').find('a');
+
+      next.tab('show')
+    }
+    var tabCycle = setInterval(tabChange, 100000)
+    $(function () {
+      $('.circle-container a').click(function (e) {
+        e.preventDefault();
+        clearInterval(tabCycle);
+        $(this).tab('show')
+        setTimeout(function () {
+          tabCycle = setInterval(tabChange, 100000)
+        }, 100000);
+      });
+    });
+
+    /**Responsive**/
+
+    if ($(window).width() < 767) {
+      $(".circle-container").addClass("circle-responsive");
+      $(".circle-pannel").addClass("circle-pannel-responsive");
+    }
+
+
+
+
+    // Full screen pre loader
+    $(window).load(function () {
+      $("#pre-loader").delay(500).fadeOut(2000);
+      $(".preload-logo").addClass('zoomOutUp');
+      $(".loader").addClass('zoomOutDown');
+    });
+
+
+    //Logo fadeIn fadeOut on 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > $(window).height() / 2.2) $('.logo-wrapper').fadeOut('slow');
+      if ($(this).scrollTop() < $(window).height() / 2.2) $('.logo-wrapper').fadeIn('slow');
+    });
+
+    //Using the smooth scroll for smooth navigation    
+    smoothScroll.init({
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callbackBefore: function (toggle, anchor) {}, // Function to run before scrolling
+      callbackAfter: function (toggle, anchor) {} // Function to run after scrolling
+    });
+
+    //wow animation by using with animate css
+    var isiPad = (navigator.userAgent.match(/iPad/i) != null);
+    if (($.browser.mobile) || (isiPad)) {
+      // disable animation on mobile
+      $("body").removeClass("wow");
+    } else {
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true
+      });
+      wow.init();
+    }
+
+
+
+
+
+    //Function to animate slider captions 
+    function doAnimations(elems) {
+      //Cache the animationend event in a variable
+      var animEndEv = 'webkitAnimationEnd animationend';
+
+      elems.each(function () {
+        var $this = $(this),
+          $animationType = $this.data('animation');
+        $this.addClass($animationType).one(animEndEv, function () {
+          $this.removeClass($animationType);
+        });
+      });
+    }
+
+    //Variables on page load 
+    var $myCarousel = $('.caption-slider'),
+      $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+
+    //Initialize carousel 
+    $myCarousel.carousel();
+
+    //Animate captions in first slide on page load 
+    doAnimations($firstAnimatingElems);
+
+    //Pause carousel  
+    $myCarousel.carousel('pause');
+
+
+    //Other slides to be animated on carousel slide event 
+    $myCarousel.on('slide.bs.carousel', function (e) {
+      var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+      doAnimations($animatingElems);
+    });
+
+
+
+
+
+    // Select all links with hashes
+    $('.mainmenu-area a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function (event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function () {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+  </script>
+
+
+
+<!-- Modal contat -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered size-modal" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+       <div class="modal-cafe--grid">
+         <div class="modal-cafe--item">
+           <div class="cafe-img">
+             <img src="assets/img/cae.png" alt="">
+
+           </div>
+         </div>
+         <div class="modal-cafe--item">
+          <p class="cafe-title">Transforma tus
+            ideas en realidad nosotros invitamos!</p>
+
+            
+              <form class="form-cafe ">
+                <div class="row" style="    margin-bottom: 30px;">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre y apellido">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col">
+                    <textarea class="form-control" id="Tu mensaje" placeholder="Tu mensaje" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="btn-general">
+                  <a href="">Enviar</a>
+                </div>
+              </form>
+              
+          
+         </div>
+       </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
