@@ -2818,27 +2818,34 @@ body {
     }
 
     .timeline-block:nth-child(even) .text {
-      transform: translateY(-50%);
-      padding-top: 0;
-      padding-bottom: 60px;
-    }
+     /* transform: translateY(-50%);*/
+     transform: translateY(-70%);
+     padding-top: 0;
+     padding-bottom: 60px;
+   }
 
-    .timeline-block:nth-child(even) .text::before {
-      transform: translateY(-225%) translateX(-62%);
-      top: auto;
-      bottom: 30px;
-    }
-  }
+   .timeline-block:nth-child(even) .text::before {
+     /* transform: translateY(-225%) translateX(-62%);*/
+     transform: translateY(27%) translateX(-62%);
+     top: auto;
+     bottom: 30px;
+   }
+ }
 
-  .map{
-    position: absolute;
-    width: 40%;
-    opacity: 0.4;
-    filter: blur(1px);
-    z-index: -1;
-  }
+ .map{
+  position: absolute;
+  width: 40%;
+  opacity: 0.4;
+  filter: blur(1px);
+  z-index: -1;
+}
 
+.prueba{
+  opacity: 0;
+  font-size: 1.7rem;
+  color: #000;
+}
 
-
-
-
+.prueba:hover{
+ opacity: 1;
+}

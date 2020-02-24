@@ -50,7 +50,15 @@ $('a.nav-link').hover(function () {
 // card
 let random = Math.floor(Math.random() * 3) + 1;
 $('#card-'+random).addClass("active-about main-about__card-line ");
+var elements = $('.modal-overlay, .modal');
 
+$('button').click(function(){
+  elements.addClass('active');
+});
+
+$('.close-modal').click(function(){
+  elements.removeClass('active');
+});
 // Menú fixed
 $(window).scroll(function () {
   if ($(document).scrollTop() > 70 && ($(window).width() >= 768)) {
