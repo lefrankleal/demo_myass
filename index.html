@@ -396,7 +396,6 @@
 
   </div>
   <!-- tbas prueba -->
-
 </section>
 <!------------------------------------------- timeline----------------------------------------- -->
 
@@ -405,7 +404,6 @@
 <section id="service" class="main-services container">
   <div class="title-general ">
     <p class="animated fadeInUp wow">Servicios</p>
-
   </div>
   <div class="main-services_grid">
     <div class="main-services_card animated fadeInUp wow">
@@ -614,6 +612,7 @@
     </section>
     <!------------------------------------------- servicios ------------------------------------------->
 
+
     <!------------------------------------------- Portfolio ------------------------------------------->
 
     <section id="portfolio" class="portfolio">
@@ -641,7 +640,7 @@
                             Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingresos</p>
                           </div>
                           <div class="caption-button" data-animation="animated fadeInUp">
-                            <a href="#open-modal"class="button " > Ver más</a>
+                            <a href="#open-modal" class="button " > Ver más</a>
 
                           </div>
                         </div>
@@ -845,7 +844,6 @@
   </section>
   <!------------------------------------------- Portfolio ------------------------------------------->
 
-
   <!--------------------------------------------- clienes------------------------------------------- -->
   <section class="main-client mt-5" id="client">
     <div class="container">
@@ -978,7 +976,7 @@
   <!-- modal potfolio -->
   <div id="open-modal" class="modal-window">
     <div>
-      <a href="#" title="Close" class="modal-close">Close</a>
+      <a href="#" title="Close" class="modal-close modal-close_modal"><img src="assets/img/arrow.png" alt="">Volver</a>
       <div class="portfolio-content container">
         <div class="portfolio-content-title">
           <div class="portfolio-title">
@@ -1181,7 +1179,54 @@
 <!-- modal potfolio -->
 
 </div>
+<script>
+  //******************************nav active***************************************//
+// Cache selectors
+var lastId,
+topMenu = $("#mainNav"),
+topMenuHeight = topMenu.outerHeight()+1,
+ // All list items
+ menuItems = topMenu.find("a"),
+ // Anchors corresponding to menu items
+ scrollItems = menuItems.map(function(){
+   var item = $($(this).attr("href"));
+   if (item.length) { return item; }
+ });
 
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+    scrollTop: offsetTop
+  }, 850);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+     lastId = id;
+       // Set/remove active class
+       menuItems
+       .parent().removeClass("active-nav")
+       .end().filter("[href=#"+id+"]").parent().addClass("active-nav");
+     }                   
+   });
+</script>
 </body>
 
 </html>

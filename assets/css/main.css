@@ -2676,6 +2676,10 @@ body {
     display: table;
   }
 
+  .modal-close_modal img{
+    width: 25px;
+  }
+
   .timeline-container::after {
     clear: both;
   }

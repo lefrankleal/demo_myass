@@ -12,6 +12,29 @@ $(function () {
     $('.offcanvas-collapse').toggleClass('open')
   })
 })
+// Menú fixed
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 70 && ($(window).width() >= 768)) {
+    $('.navbar-fixed-js').addClass('fixed');
+    $('.nav-link').addClass('fixed-color');
+    //  $('.navbar-fixed-js').addClass('navbar-none');
+    // $("#iso").addClass('img-size').attr('src', 'assets/img/iso.jpg').removeClass('scroll-up');
+    $('.navbar').addClass('navbar-visible')
+  } else {
+    $('.navbar-fixed-js').removeClass('fixed');
+    $("#iso").removeClass('img-size').attr('src', 'assets/img/iso-color.png').removeClass('scroll-up');
+    $('.nav-link').removeClass('fixed-color');
+    $('.navbar').removeClass('navbar-visible');
+  }
+});
+
+$(".hamburger").on("click", function () {
+  $(this).toggleClass("is-active");
+});
+
+
+
+
 
 
 //navbar
@@ -204,20 +227,6 @@ $('#card-'+random).addClass("active-about main-about__card-line circle-active ")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       $('button').click(function(){
         elements.addClass('active');
       });
@@ -225,29 +234,6 @@ $('#card-'+random).addClass("active-about main-about__card-line circle-active ")
       $('.close-modal').click(function(){
         elements.removeClass('active');
       });
-// Menú fixed
-$(window).scroll(function () {
-  if ($(document).scrollTop() > 70 && ($(window).width() >= 768)) {
-    $('.navbar-fixed-js').addClass('fixed');
-    $('.nav-link').addClass('fixed-color');
-    //  $('.navbar-fixed-js').addClass('navbar-none');
-    // $("#iso").addClass('img-size').attr('src', 'assets/img/iso.jpg').removeClass('scroll-up');
-    $('.navbar').addClass('navbar-visible')
-  } else {
-    $('.navbar-fixed-js').removeClass('fixed');
-    $("#iso").removeClass('img-size').attr('src', 'assets/img/iso-color.png').removeClass('scroll-up');
-    $('.nav-link').removeClass('fixed-color');
-    $('.navbar').removeClass('navbar-visible');
-  }
-});
-
-$(".hamburger").on("click", function () {
-  $(this).toggleClass("is-active");
-});
-
-
-
-
 
 
 //******************************nav active***************************************//
