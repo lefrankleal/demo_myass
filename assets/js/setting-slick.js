@@ -75,7 +75,74 @@ $('.main-client__content').slick({
 });
 
 
-
+$('.main-client__content--portfolio').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  dots: false,
+  arrows: true,
+  responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1000
+      }
+    }
+  ]
+});
+$('.main-tech__content--portfolio').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1000
+      }
+    }
+  ]
+});
 
 
 
@@ -124,6 +191,7 @@ $('.screen-slider__porfolio').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   dots: true,
+  autoplay:true,
   arrows: true,
   responsive: [{
     breakpoint: 1200,
