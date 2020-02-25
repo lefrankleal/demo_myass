@@ -1677,7 +1677,9 @@ body {
   text-align: center;
 }
 
-.main-service-icon {}
+.main-service-icon {
+  margin: 14px;
+}
 
 .main-service-icon:hover {
   filter: none;
@@ -1692,12 +1694,13 @@ body {
 }
 
 .main-service-icon img {
-  width: 60px;
+  width: 40px;
   filter: grayscale(1);
+  margin-left: 20px;
 }
 
 .main-service-icon:hover img {
-  width: 60px;
+  /* width: 60px; */
   filter: none;
 }
 

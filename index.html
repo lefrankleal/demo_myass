@@ -144,8 +144,7 @@
         </div>
         <div class="main-about__description--card">
           <p>
-            Los temas de desarrollo pueden llegar a ser confusos y enredarl@. Nosotros tratamos de ser los más claros y
-            directos posible. Así garantizamos la transparencia y seguimiento 24/7 de su/s proyecto/s por medio de:
+            Los temas de desarrollo son famosos por enredarl@, nosotros no somos de ese tipo! Somos directos y claros. Asi garantizamos la transparencia y seguimiento 24/7 por medio de:
             <ul>
               <li> Monday.com
               </li>
@@ -176,7 +175,7 @@
             Fresco! Le enviamos un NDA (Acuerdo de
             Confidencialidad) en tiempo record! Lo ayudamos
             a aterrizar su idea/proyecto antes de hacerlo
-            una realidad! Podemos aporartarle:
+            una realidad! Podemos aportarle:
             <ul>
               <li>
                 Insight & Benchmark
@@ -399,7 +398,6 @@
 </section>
 <!------------------------------------------- timeline----------------------------------------- -->
 
-
 <!------------------------------------------- servicios----------------------------------------- -->
 <section id="service" class="main-services container">
   <div class="title-general ">
@@ -597,10 +595,10 @@
                   <!-- Google Analytics (aplica para Web Apps)
                     Otros/Definidos por el cliente -->
                   </li>
-                  <!-- <img width="100px" class="one" src="assets/img/iconos_servicios/web.png" alt=""> -->
-                  <img class="one" src="assets/img/iconos_servicios/invision.png" alt="">
-                  <img class="two" width="30px" src="assets/img/iconos_servicios/adobe-xd.png" alt="">
-                  <img class="two" src="assets/img/iconos_servicios/zeplin1.png" alt="">
+                  <div class="main-service-icon">
+                    <img src="assets/img/api.png" alt="">
+                    <img src="assets/img/diagram.png" alt="">
+                  </div>
 
                 </div>
               </div>
@@ -1226,6 +1224,35 @@ $(window).scroll(function(){
        .end().filter("[href=#"+id+"]").parent().addClass("active-nav");
      }                   
    });
+
+
+
+( function( $ ) {
+  const $document = $(document);
+  
+  const initTyped = (selector, options) => {
+   let settings = options;
+   if (!settings) {
+    settings = {
+     stringsElement: '#typed-content',
+     typeSpeed: 60,
+     backSpeed: 40,
+     loop: true,
+     showCursor: true
+   };
+ }
+
+ let typed = new Typed(selector, settings);
+}
+
+$document.ready(() => {
+  //  console.log('ready');
+
+  initTyped('.js-typed');
+});
+})(jQuery);
+
+
 </script>
 </body>
 

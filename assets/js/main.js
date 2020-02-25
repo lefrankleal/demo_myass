@@ -294,30 +294,3 @@ $(window).scroll(function(){
 
 
 
-
-
-( function( $ ) {
-  const $document = $(document);
-  
-  const initTyped = (selector, options) => {
-   let settings = options;
-   if (!settings) {
-    settings = {
-     stringsElement: '#typed-content',
-     typeSpeed: 60,
-     backSpeed: 40,
-     loop: true,
-     showCursor: true
-   };
- }
-
- let typed = new Typed(selector, settings);
-}
-
-$document.ready(() => {
-  //  console.log('ready');
-
-  initTyped('.js-typed');
-});
-})(jQuery);
-
