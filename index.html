@@ -9,7 +9,10 @@
   <meta name="description" content="Add your business website description here">
   <meta name="keywords" content="Add your, business, website, keywords, here">
   <link href="//db.onlinewebfonts.com/c/228984258eaa17737d6d3fdcc03f6f1f?family=GeosansLight" rel="stylesheet"
-  type="text/css"> <!-- Favicons -->
+    type="text/css"> <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
 
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
@@ -31,14 +34,14 @@
   <!-- preloader -->
   <div id="pre-loader">
     <div class="pre-loader-container">
-     <!--  <h2 class="section-title text-center preload-logo wow bounceIn">
+      <!--  <h2 class="section-title text-center preload-logo wow bounceIn">
         <img src="assets/img/iso-color.png" alt="Logotipo ASS" title="Logo ASS"
         style="padding-bottom: 50px; width: 200px;">
         <br><br>
       </h2> -->
       <div class="loader wow"></div>
     </div>
-  </div> 
+  </div>
   <!-- <div id="pre-loader">
     <div class="pre-loader-container">
       <h2 class="section-title text-center preload-logo wow bounceIn">
@@ -56,8 +59,8 @@
         <div class="main-brand">
           <a class="navbar-brand" href="#"> <img id="iso" src="assets/img/iso-color.png"> </a>
           <span class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
-          type="button">
-          <span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
+            type="button">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
         </div>
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos" id="mainNav">
@@ -66,7 +69,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">
-              Qué hacemos?</a>
+                Qué hacemos?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#service"> Servicios</a>
@@ -90,7 +93,40 @@
   </header>
   <!------------------------------------------- BANNER---------------------------------------- -->
   <div class="main-banner">
-    <div class="main-banner__content">
+    <div class="split-slideshow">
+      <div class="slideshow">
+        <div class="slider">
+          <div class="item">
+            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
+            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
+            src="assets/img/banner.mp4"></video>
+          </div>
+          <div class="item">
+            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
+            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
+            src="assets/img/banner.mp4"></video>
+          </div>
+          <div class="item">
+            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
+            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
+            src="assets/img/banner.mp4"></video>
+          </div>
+          <div class="item">
+            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
+            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
+            src="assets/img/banner.mp4"></video>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow-text">
+        <div class="item">Beyond Digital Experiences</div>
+        <div class="item">Created by </div>
+        <div class="item">A Marketer Expert</div>
+        <div class="item">Pro Developers & UX/UI Designers</div>
+      </div>
+    </div>
+    
+    <!-- <div class="main-banner__content">
       <div class="main-banner__item">
         <div class="mask">
           <div class="main-banner__text">
@@ -108,12 +144,15 @@
           </div>
         </div>
         <div class="main-banner__img">
-          <video class="d-none d-sm-block" autoplay loop width="100%" muted=""
-          style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-          src="assets/img/banner.mp4"></video>
+          <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
+            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
+            src="assets/img/banner.mp4"></video>
+
+
         </div>
       </div>
-    </div>
+    </div> -->
+    <div class="main-mask_nube" style="background-image: url('assets/img/rbg.png');"></div>
   </div>
   <!------------------------------------------- BANNER---------------------------------------- -->
 
@@ -127,12 +166,13 @@
   <section id="about" class="main-about container">
     <div class="title-general container">
       <p class="animated fadeInUp wow">Que hacemos?</p>
-      <center class="subtitle animated fadeIn wow"> <span> Somos una agencia de experiencias digitales, por medio del desarrollo a la medida
-        de Apps nativas para
-      iOS/Android y Hi End Web Apps.</span></center>
+      <center class="subtitle animated fadeIn wow"> <span> Somos una agencia de experiencias digitales, por medio del
+          desarrollo a la medida
+          de Apps nativas para
+          iOS/Android y Hi End Web Apps.</span></center>
     </div>
     <div class="main-about__grid">
-      <div id="card-1" class="main-about__card  fadeInUp wow animated" data-wow-duration="2s">
+      <div id="card-1" class="main-about__card  ">
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
@@ -144,12 +184,9 @@
         </div>
         <div class="main-about__description--card">
           <p>
-            Los temas de desarrollo son famosos por enredarl@, nosotros no somos de ese tipo! Somos directos y claros. Asi garantizamos la transparencia y seguimiento 24/7 por medio de:
-            <ul>
-              <li> Monday.com
-              </li>
-              <li> Slack </li>
-            </ul>
+            Los temas de desarrollo son famosos por enredarl@, nosotros no somos de ese tipo! Somos directos y claros.
+            Asi garantizamos la transparencia y seguimiento 24/7 por medio de:
+
           </p>
         </div>
         <div class="main-about__iconos">
@@ -160,7 +197,7 @@
         </div>
       </div>
       <!----------- CARD2--------->
-      <div id="card-2" class="main-about__card " >
+      <div id="card-2" class="main-about__card ">
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
@@ -182,9 +219,9 @@
               </li>
               <li>Consultoria de Marketing (personalizada) </li>
               <li>
-              Analisis de oportunidad </li>
+                Analisis de oportunidad </li>
               <li>
-              Mercado </li>
+                Mercado </li>
               <li> Estrategia </li>
               <li> Valores agregados </li>
             </ul>
@@ -192,7 +229,7 @@
         </div>
       </div>
       <!------------- CARD3------->
-      <div id="card-3" class="main-about__card fadeInUp wow animated" data-wow-duration="3">
+      <div id="card-3" class="main-about__card ">
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
@@ -212,7 +249,7 @@
             nuevo! Pensamos a futuro:
             <ul>
               <li>
-              Código bien estructurado </li>
+                Código bien estructurado </li>
               <li>Documentación API</li>
             </ul>
           </p>
@@ -228,161 +265,323 @@
       <p class="animated fadeInUp wow">Nuestro Proceso y Valor Agregado!</p>
       <center> <span> Transparentes y directos!</span></center>
     </div>
-    <!-- tabs -->
-    <div class="tabset container">
-      <!-- Tab 1 -->
-      <input type="radio" name="tabset" id="tab7" aria-controls="marzen" checked>
-      <label for="tab7">Opcion 1</label>
-      <!-- Tab 2 -->
-      <input type="radio" name="tabset" id="tab8" aria-controls="rauchbier">
-      <label for="tab8">Opcion 2</label>
 
-      <div class="tab-panels container-time">
-        <div id="rauchbier" class="tab-panel">
-          <div class="timeline-container">
-            <div class="timeline-block">
-              <div class="iconic animated fadeInUp wow"><i class="flaticon-video-conference"></i></div>
-              <div class="text text-v">
-                <header class="heading">
-                  <h4 class="title">Workshop
-                  </h4>
-                </header>
-                <p>
-
-                Visualizar su idea/proyecto, preparar documentos y confirmar cotización!</p>
-              </div>
-            </div>
-            <div class="timeline-block">
-              <div class="iconic animated fadeInUp wow"><i class="flaticon-internet"></i></div>
-              <div class="text">
-                <header class="heading">
-                  <h4 class="title">Wireframing</h4>
-                </header>
-                <img width="80%" src="assets/img/wi.jpg" alt="">
-              </div>
-              <p class="prueba" style="width: 200px;
-              margin-top: -50px;
-              margin-left: 30px;">
-              Nos sentamos con usted! a preparar ese super Mockup, creamos esa guia visual y esperamos la acción de
-            nuestro equipo de diseño!</p>
-          </div>
-          <div class="timeline-block">
-            <div class="iconic animated fadeInUp wow"><i class="flaticon-compass"></i></div>
-            <div class="text">
-              <header class="heading">
-                <h4 class="title">Project Kickoff & Diseño</h4>
-              </header>
-              <p>
-                Conocera a nuestro equipo! Le daremos una especie de guia sobre el proceso de desarrollo a iniciar y
-              estara a un paso de aprobar el diseño final de su proyecto</p>
-            </div>
-          </div>
-          <div class="timeline-block">
-            <div class="iconic animated fadeInUp wow"><i class="flaticon-qa"></i></div>
-            <div class="text">
-              <header class="heading">
-                <h4 class="title">Desarrollo y Pruebas QA
-                </h4>
-              </header>
-              <img style="border-radius: 5px;" width="80%"
-              src="https://www.vertistecnologia.com/wp-content/uploads/2015/12/FSPLFPQBCZ_1300.jpg" alt="">
-            </div>
-            <p class="prueba" style="width: 200px;
-            margin-top: -50px;
-            margin-left: 30px;"> Usando la metodología SCRUM, nuestro equipo desarrollará su proyecto conectando todo
-          el diseño aprobado </p>
+    <div class="timeline-lg">
+      <div id="time-1" class="timeline_body">
+        <div class="timeline_title">
+          <h3>Workshop</h3>
+         
+          <p> <br><br>Visualizar su idea/proyecto, preparar documentos y confirmar cotización!</p>
         </div>
-        <div class="timeline-block">
-          <div class="iconic animated fadeInUp wow"><i class="flaticon-help"></i></div>
-          <div class="text">
-            <header class="heading">
-              <h4 class="title">Lanzamiento/entrega y Soporte</h4>
-            </header>
-            <p>
-              Su proyecto esta listo para ser lanzado! Recuerde que es necesario darle el soporte y mantenimiento
-              necesario!
+        
+        <div class="timeline_elements">
+          <div class="timeline_img">
+            <img src="assets/img/wi.jpg" alt="">
+          </div>
+          <div class="timeline_icon">
+            <i class="flaticon-video-conference"></i>
+          </div>
+        </div>
+      </div>
 
-            </p>
+      <div id="time-2" class="timeline_body">
+        <div class="timeline_title">
+          <h3>Wireframing</h3>
+          <p> Nos sentamos con usted! a
+            preparar ese super Mockup,
+            creamos esa guia visual y
+            esperamos la acción de
+            nuestro equipo de diseño!</p>
+        </div>
+        <div class="timeline_elements">
+          <div class="timeline_img">
+            <img src="assets/img/wi.jpg" alt="">
+          </div>
+          <div class="timeline_icon">
+            <i class="flaticon-internet"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="time-3" class="timeline_body">
+        <div class="timeline_title">
+          <h3>Project Kickoff & Diseño</h3>
+          <p>Le
+            daremos una especie de guia
+            sobre el proceso de desarrollo
+            a iniciar y estara a un paso de
+            aprobar el diseño final de su
+            proyecto.</p>
+        </div>
+        <div class="timeline_elements">
+          <div class="timeline_img">
+            <img src="assets/img/wi.jpg" alt="">
+          </div>
+          <div class="timeline_icon">
+            <i class="flaticon-compass"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="time-4" class="timeline_body">
+        <div class="timeline_title">
+        <h3>Desarrollo y Pruebas QA</h3>
+        <p>Usando la metodología SCRUM, nuestro
+          equipo desarrollará su proyecto, haremos Pruebas Alfa y
+          Beta con usted y continuaremos con
+          nuestra Etapa de QA.</p>
+        </div>
+        <div class="timeline_elements">
+          <div class="timeline_img">
+            <img src="assets/img/wi.jpg" alt="">
+          </div>
+          <div class="timeline_icon">
+            <i class="flaticon-qa"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="time-5" class="timeline_body">
+        <div class="timeline_title">
+          <h3>Lanzamiento/entrega y Soporte</h3>
+          <p><br>Su proyecto esta listo para ser
+            lanzado! Recuerde que es
+            necesario darle el soporte y
+            mantenimiento necesario!</p>
+        </div>
+        <div class="timeline_elements">
+          <div class="timeline_img">
+            <img src="assets/img/wi.jpg" alt="">
+          </div>
+          <div class="timeline_icon">
+            <i class="flaticon-help"></i>
           </div>
         </div>
       </div>
     </div>
 
-    <!--------------------------------------------- timelin 2e------------------------------------------- -->
+    <!-- timline xs slider -->
+<div class="main-timeline">
+  <div class="timeline_body">
+    <div class="timeline_title">
+      <h3>Workshop</h3>
+     
+      <p> <br><br>Visualizar su idea/proyecto, preparar documentos y confirmar cotización!</p>
+    </div>
+    
+    <div class="timeline_elements">
+      <div class="timeline_img">
+        <img src="assets/img/wi.jpg" alt="">
+      </div>
+      <div class="timeline_icon">
+        <i class="flaticon-video-conference"></i>
+      </div>
+    </div>
+  </div>
 
-    <div id="marzen" class="tab-panel ">
+  <div class="timeline_body">
+    <div class="timeline_title">
+      <h3>Wireframing</h3>
+      <p> Nos sentamos con usted! a
+        preparar ese super Mockup,
+        creamos esa guia visual y
+        esperamos la acción de
+        nuestro equipo de diseño!</p>
+    </div>
+    <div class="timeline_elements">
+      <div class="timeline_img">
+        <img src="assets/img/wi.jpg" alt="">
+      </div>
+      <div class="timeline_icon">
+        <i class="flaticon-internet"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline_body">
+    <div class="timeline_title">
+      <h3>Project Kickoff & Diseño</h3>
+      <p>Le
+        daremos una especie de guia
+        sobre el proceso de desarrollo
+        a iniciar y estara a un paso de
+        aprobar el diseño final de su
+        proyecto.</p>
+    </div>
+    <div class="timeline_elements">
+      <div class="timeline_img">
+        <img src="assets/img/wi.jpg" alt="">
+      </div>
+      <div class="timeline_icon">
+        <i class="flaticon-compass"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline_body">
+    <div class="timeline_title">
+    <h3>Desarrollo y Pruebas QA</h3>
+    <p>Usando la metodología SCRUM, nuestro
+      equipo desarrollará su proyecto, haremos Pruebas Alfa y
+      Beta con usted y continuaremos con
+      nuestra Etapa de QA.</p>
+    </div>
+    <div class="timeline_elements">
+      <div class="timeline_img">
+        <img src="assets/img/wi.jpg" alt="">
+      </div>
+      <div class="timeline_icon">
+        <i class="flaticon-qa"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline_body">
+    <div class="timeline_title">
+      <h3>Lanzamiento/entrega y Soporte</h3>
+      <p><br>Su proyecto esta listo para ser
+        lanzado! Recuerde que es
+        necesario darle el soporte y
+        mantenimiento necesario!</p>
+    </div>
+    <div class="timeline_elements">
+      <div class="timeline_img">
+        <img src="assets/img/wi.jpg" alt="">
+      </div>
+      <div class="timeline_icon">
+        <i class="flaticon-help"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+   
+    <!------------------------------------------- timeline XS----------------------------------------- -->
+    <!-- <div id="marzen" class="tab-panel timeline-xs ">
       <img class="background-ola" src="assets/img/clientes.png" alt="">
       <div class="col-sm-12">
         <div class="panel general-panel circle-pannel">
           <div class="panel-heading">
             <ul class="nav nav-tabs circle-container">
               <li class="active"><a data-toggle="tab" href="#tab1"><i class="flaticon-video-conference"
-                aria-hidden="true"></i></a></li>
-                <li><a data-toggle="tab" href="#tab2"><i class="flaticon-internet" aria-hidden="true"></i></a></li>
-                <li><a data-toggle="tab" href="#tab3"><i class="flaticon-compass" aria-hidden="true"></i></a></li>
-                <li><a data-toggle="tab" href="#tab4"><i class="flaticon-qa" aria-hidden="true"></i></a></li>
-                <li><a data-toggle="tab" href="#tab5"><i class="flaticon-help" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-            <div class="panel-body">
-              <div class="tab-content">
-                <div id="tab1" class="tab-pane in active">
-                  <h4>Workshop</h4>
-                  <div class="row">
-                    <p class="col-sm-12">
-                      Visualizar su idea/proyecto,
-                      preparar documentos y
-                      confirmar cotización!
-                    </p>
-                  </div>
+                    aria-hidden="true"></i></a></li>
+              <li><a data-toggle="tab" href="#tab2"><i class="flaticon-internet" aria-hidden="true"></i></a></li>
+              <li><a data-toggle="tab" href="#tab3"><i class="flaticon-compass" aria-hidden="true"></i></a></li>
+              <li><a data-toggle="tab" href="#tab4"><i class="flaticon-qa" aria-hidden="true"></i></a></li>
+              <li><a data-toggle="tab" href="#tab5"><i class="flaticon-help" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="panel-body">
+            <div class="tab-content">
+              <div id="tab1" class="tab-pane in active">
+                <h4>Workshop</h4>
+                <div class="row">
+                  <p class="col-sm-12">
+                    Visualizar su idea/proyecto,
+                    preparar documentos y
+                    confirmar cotización!
+                  </p>
                 </div>
-                <div id="tab2" class="tab-pane">
-                  <h4>Wireframing</h4>
-                  <div class="row">
-                    <p class="col-sm-12">
-                      Nos sentamos con usted! a
-                      preparar ese super Mockup,
-                      creamos esa guia visual y
-                      esperamos la acción de
+              </div>
+              <div id="tab2" class="tab-pane">
+                <h4>Wireframing</h4>
+                <div class="row">
+                  <p class="col-sm-12">
+                    Nos sentamos con usted! a
+                    preparar ese super Mockup,
+                    creamos esa guia visual y
+                    esperamos la acción de
                     nuestro equipo de diseño! </p>
-                  </div>
                 </div>
-                <div id="tab3" class="tab-pane">
-                  <h4>Project Kickoff & Diseño</h4>
-                  <div class="row">
-                    <p class="col-sm-12">
-                      Conocera a nuestro equipo! Le
-                      daremos una especie de guia
-                      sobre el proceso de desarrollo
-                      a iniciar y estara a un paso de
-                      aprobar el diseño final de su
-                      proyecto.
-                    </p>
-                  </div>
+              </div>
+              <div id="tab3" class="tab-pane">
+                <h4>Project Kickoff & Diseño</h4>
+                <div class="row">
+                  <p class="col-sm-12">
+                    Conocera a nuestro equipo! Le
+                    daremos una especie de guia
+                    sobre el proceso de desarrollo
+                    a iniciar y estara a un paso de
+                    aprobar el diseño final de su
+                    proyecto.
+                  </p>
                 </div>
-                <div id="tab4" class="tab-pane">
-                  <h4>Desarrollo y Pruebas QA</h4>
-                  <div class="row">
-                    <p class="col-sm-12">
-                      Usando la metodología SCRUM, nuestro
-                      equipo desarrollará su proyecto
-                      conectando todo el diseño aprobado, una
-                      vez hecho esto, haremos Pruebas Alfa y
-                      Beta con usted y continuaremos con
-                      nuestra Etapa de QA.
-                    </p>
-                  </div>
+              </div>
+              <div id="tab4" class="tab-pane">
+                <h4>Desarrollo y Pruebas QA</h4>
+                <div class="row">
+                  <p class="col-sm-12">
+                    Usando la metodología SCRUM, nuestro
+                    equipo desarrollará su proyecto
+                    conectando todo el diseño aprobado, una
+                    vez hecho esto, haremos Pruebas Alfa y
+                    Beta con usted y continuaremos con
+                    nuestra Etapa de QA.
+                  </p>
                 </div>
-                <div id="tab5" class="tab-pane">
-                  <h4>Lanzamiento/entrega y Soporte</h4>
-                  <div class="row">
-                    <p class="col-sm-12">
-                      Su proyecto esta listo para ser
-                      lanzado! Recuerde que es
-                      necesario darle el soporte y
-                      mantenimiento necesario!
-                    </p>
-                  </div>
+              </div>
+              <div id="tab5" class="tab-pane">
+                <h4>Lanzamiento/entrega y Soporte</h4>
+                <div class="row">
+                  <p class="col-sm-12">
+                    Su proyecto esta listo para ser
+                    lanzado! Recuerde que es
+                    necesario darle el soporte y
+                    mantenimiento necesario!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+  <!------------------------------------------- timeline----------------------------------------- -->
+
+  <!------------------------------------------- servicios----------------------------------------- -->
+  <section id="service" class="main-services container">
+    <div class="title-general ">
+      <p class="animated fadeInUp wow">Servicios</p>
+    </div>
+    <div class="main-services_grid">
+      <div class="main-services_card animated fadeInUp wow">
+        <div class="myass_flipbox type_flip_right align-left">
+          <div id="servicio-1" class="flipbox_wrapper">
+            <div class="flipbox_front">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services"></div>
+                </div>
+              </div>
+              <h5 class="flipbox_title">Aplicaciones Moviles</h5>
+              <div class="flipbox_description">
+                <div class="main-services__description--card">
+                  <p>
+                    <ul class="items-services">
+                      <li> Aplicaciones nativas iOS (100% Swift) y Android (100% Java) </li>
+                      <li> React Native para proyectos especiales </li>
+                      <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
+                        Assurance)</li>
+
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flipbox_back">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services circle-services--back"></div>
+                </div>
+              </div>
+              <div class="flipbox_content">
+                <li> Diseño intuitivo e impactante por medio de UX/UI (User
+                  Experience/User Interface) unico para cada proyecto</li>
+                <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad</li>
+                <div class="main-service-icon">
+                  <img src="assets/img/iconos_servicios/android2.png" alt="">
+                  <img src="assets/img/iconos_servicios/icon.png" alt="">
                 </div>
               </div>
             </div>
@@ -390,420 +589,399 @@
         </div>
       </div>
 
+      <div class="main-services_card animated fadeInUp wow">
+        <div id="servicio-2" class="myass_flipbox type_flip_right align-left">
+          <div class="flipbox_wrapper">
+            <div class="flipbox_front">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services"></div>
+                </div>
+              </div>
+              <h5 class="flipbox_title">Web Apps</h5>
+              <div class="flipbox_description">
+                <div class="main-services__description--card">
+                  <p>
 
-    </div>
+                    <ul>
+                      <li> Qué es? Un programa tipo servidor-cliente que incluye una interfaz para
+                        usuarios y solo se puede experimentar en navegadores como Chrome.
+                      </li>
+                      <li>
+                        Diseño intuitivo e impactante por medio de UX/UI (User Experience/User
+                        Interface) unico para cada proyecto
 
-  </div>
-  <!-- tbas prueba -->
-</section>
-<!------------------------------------------- timeline----------------------------------------- -->
+                      </li>
 
-<!------------------------------------------- servicios----------------------------------------- -->
-<section id="service" class="main-services container">
-  <div class="title-general ">
-    <p class="animated fadeInUp wow">Servicios</p>
-  </div>
-  <div class="main-services_grid">
-    <div class="main-services_card animated fadeInUp wow">
-      <div class="myass_flipbox type_flip_right align-left">
-        <div class="flipbox_wrapper">
-          <div class="flipbox_front">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services"></div>
+
+
+                    </ul>
+                  </p>
+                </div>
               </div>
             </div>
-            <h5 class="flipbox_title">Aplicaciones Moviles</h5>
-            <div class="flipbox_description">
-              <div class="main-services__description--card">
-                <p>
-                  <ul class="items-services">
-                    <li> Aplicaciones nativas iOS (100% Swift) y Android (100% Java) </li>
-                    <li> React Native para proyectos especiales </li>
-                    <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
-                    Assurance)</li>
+            <div class="flipbox_back">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services circle-services--back"></div>
+                </div>
+              </div>
+              <div class="flipbox_content">
+                <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad continua)</li>
+                <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
+                  Assurance) antes del lanzamiento oficial! </li>
 
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flipbox_back">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services circle-services--back"></div>
-              </div>
-            </div>
-            <div class="flipbox_content">
-              <li> Diseño intuitivo e impactante por medio de UX/UI (User
-              Experience/User Interface) unico para cada proyecto</li>
-              <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad</li>
-              <div class="main-service-icon">
-                <img src="assets/img/iconos_servicios/android2.png" alt="">
-                <img src="assets/img/iconos_servicios/icon.png" alt="">
+                <li>
+                  Diseño intuitivo e impactante por medio de UX/UI (User Experience/User
+                  Interface) unico para cada proyecto</li>
+                <div class="main-service-icon main-service-icon-img">
+                  <img class="wi" src="assets/img/iconos_servicios/a.png" alt="">
+                  <img src="assets/img/iconos_servicios/airbnb (2).png" alt="">
+                  <img src="assets/img/iconos_servicios/kickstarter (1).png" alt="">
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="main-services_card animated fadeInUp wow">
-      <div class="myass_flipbox type_flip_right align-left">
-        <div class="flipbox_wrapper">
-          <div class="flipbox_front">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services"></div>
+      <div class="main-services_card animated fadeInUp wow">
+        <div id="servicio-3" class="myass_flipbox type_flip_right align-left">
+          <div class="flipbox_wrapper">
+            <div class="flipbox_front">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services"></div>
+                </div>
+              </div>
+              <h5 class="flipbox_title">Diseño - UX/UI</h5>
+              <div class="flipbox_description">
+                <div class="main-services__description--card">
+                  <p>
+                    <ul>
+                      <li>Diseño unico en base a UX/UI (User Experiences/User Interface)****
+
+
+
+                      </li>
+                      <li> Prototipado en tiempo record! (Mockup)</li>
+                      <li> Enfoque de todos los detalles particulares</li>
+
+                    </ul>
+                  </p>
+                </div>
               </div>
             </div>
-            <h5 class="flipbox_title">Web Apps</h5>
-            <div class="flipbox_description">
-              <div class="main-services__description--card">
-                <p>
-
-                  <ul>
-                    <li> Qué es? Un programa tipo servidor-cliente que incluye una interfaz para
-                      usuarios y solo se puede experimentar en navegadores como Chrome.
-                    </li>
-                    <li>
-                      Diseño intuitivo e impactante por medio de UX/UI (User Experience/User
-                      Interface) unico para cada proyecto
-
-                    </li>
-
-
-
-                  </ul>
-                </p>
+            <div class="flipbox_back">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services circle-services--back"></div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="flipbox_back">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services circle-services--back"></div>
-              </div>
-            </div>
-            <div class="flipbox_content">
-              <li> Mantenimiento*** (Updates, upgrades, estabilidad y seguridad continua)</li>
-              <li> Crash Free** por medio de nuestro extricto preoceso de QA (Quality
-              Assurance) antes del lanzamiento oficial! </li>
+              <div class="flipbox_content">
+                <li> User Flow - Wireframes</li>
+                <li>
+                  Prototipo Dinamico/Interactivo (Adobe XD/InVision)</li>
+                <!-- <img width="100px" class="one" src="assets/img/iconos_servicios/web.png" alt=""> -->
+                <img class="one" src="assets/img/iconos_servicios/invision.png" alt="">
+                <img class="two" width="30px" src="assets/img/iconos_servicios/adobe-xd.png" alt="">
+                <img class="two" src="assets/img/iconos_servicios/zeplin1.png" alt="">
 
-              <li>
-                Diseño intuitivo e impactante por medio de UX/UI (User Experience/User
-              Interface) unico para cada proyecto</li>
-              <div class="main-service-icon main-service-icon-img">
-                <img class="wi" src="assets/img/iconos_servicios/a.png" alt="">
-                <img src="assets/img/iconos_servicios/airbnb (2).png" alt="">
-                <img src="assets/img/iconos_servicios/kickstarter (1).png" alt="">
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="main-services_card animated fadeInUp wow">
-      <div class="myass_flipbox type_flip_right align-left">
-        <div class="flipbox_wrapper">
-          <div class="flipbox_front">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services"></div>
+      <div class="main-services_card animated fadeInUp wow">
+        <div class="myass_flipbox type_flip_right align-left">
+          <div class="flipbox_wrapper">
+            <div class="flipbox_front">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services"></div>
+                </div>
+              </div>
+              <h5 class="flipbox_title">Integraciones & APIs</h5>
+              <div class="flipbox_description">
+                <div class="main-services__description--card">
+                  <p>
+                    <ul>
+                      <li>todos los proyectos de desarrollo podran tener o no integraciones como:
+                        Plataformas de Pago (Apple Pay, PayU, Stripe)
+                      </li>
+                      <li> Tockenizacion de Tarjetas de Credito
+                      </li>
+                      <li> Geolocalización/GPS Tracking
+                      </li>
+
+                    </ul>
+                  </p>
+                </div>
               </div>
             </div>
-            <h5 class="flipbox_title">Diseño - UX/UI</h5>
-            <div class="flipbox_description">
-              <div class="main-services__description--card">
-                <p>
-                  <ul>
-                    <li>Diseño unico en base a UX/UI (User Experiences/User Interface)****
-
-
-
-                    </li>
-                    <li> Prototipado en tiempo record! (Mockup)</li>
-                    <li> Enfoque de todos los detalles particulares</li>
-
-                  </ul>
-                </p>
+            <div class="flipbox_back">
+              <div class="main_about__icon main_about__icon--services">
+                <div class="icon icon-services">
+                  <div class="circle-services circle-services--back"></div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="flipbox_back">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services circle-services--back"></div>
-              </div>
-            </div>
-            <div class="flipbox_content">
-              <li> User Flow - Wireframes</li>
-              <li>
-              Prototipo Dinamico/Interactivo (Adobe XD/InVision)</li>
-              <!-- <img width="100px" class="one" src="assets/img/iconos_servicios/web.png" alt=""> -->
-              <img class="one" src="assets/img/iconos_servicios/invision.png" alt="">
-              <img class="two" width="30px" src="assets/img/iconos_servicios/adobe-xd.png" alt="">
-              <img class="two" src="assets/img/iconos_servicios/zeplin1.png" alt="">
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="main-services_card animated fadeInUp wow">
-      <div class="myass_flipbox type_flip_right align-left">
-        <div class="flipbox_wrapper">
-          <div class="flipbox_front">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services"></div>
-              </div>
-            </div>
-            <h5 class="flipbox_title">Integraciones & APIs</h5>
-            <div class="flipbox_description">
-              <div class="main-services__description--card">
-                <p>
-                  <ul>
-                    <li>todos los proyectos de desarrollo podran tener o no integraciones como:
-                      Plataformas de Pago (Apple Pay, PayU, Stripe)
-                    </li>
-                    <li> Tockenizacion de Tarjetas de Credito
-                    </li>
-                    <li> Geolocalización/GPS Tracking
-                    </li>
-
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flipbox_back">
-            <div class="main_about__icon main_about__icon--services">
-              <div class="icon icon-services">
-                <div class="circle-services circle-services--back"></div>
-              </div>
-            </div>
-            <div class="flipbox_content">
-              <li> Gmail/Amazon/Facebook Log Ins
-              </li>
-              <li> Emailing (Emails Automatizados)
-              </li>
-              <li>SEO (aplica para Web Apps)
+              <div class="flipbox_content">
+                <li> Gmail/Amazon/Facebook Log Ins
+                </li>
+                <li> Emailing (Emails Automatizados)
+                </li>
+                <li>SEO (aplica para Web Apps)
                   <!-- Google Analytics (aplica para Web Apps)
                     Otros/Definidos por el cliente -->
-                  </li>
-                  <div class="main-service-icon">
-                    <img src="assets/img/api.png" alt="">
-                    <img src="assets/img/diagram.png" alt="">
-                  </div>
-
+                </li>
+                <div class="main-service-icon">
+                  <img src="assets/img/api.png" alt="">
+                  <img src="assets/img/diagram.png" alt="">
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </section>
-    <!------------------------------------------- servicios ------------------------------------------->
+
+    </div>
+  </section>
+  <!------------------------------------------- servicios ------------------------------------------->
 
 
-    <!------------------------------------------- Portfolio ------------------------------------------->
+  <!------------------------------------------- Portfolio ------------------------------------------->
 
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="title-general title-general-porfolio">
-          <p class="animated fadeInUp wow">Portafolio</p>
-        </div>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="title-general title-general-porfolio">
+        <p class="animated fadeInUp wow">Portafolio</p>
+      </div>
 
-        <!--Feature-area/-->
+      <!--Feature-area/-->
 
-        <section class="angle-bg sky-bg section-padding">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active row">
-                      <div class="v-center">
-                        <div class="col-xs-12 col-md-6">
-                          <div class="caption-title" data-animation="animated fadeInUp">
-                            <h2>Vivoo</h2>
-                          </div>
-                          <div class="caption-desc mb-5" data-animation="animated fadeInUp">
-                            <p>Es un canal innovador de venta para intermediarios pequeños y medianos de seguros.
+      <section class="angle-bg sky-bg section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active row">
+                    <div class="v-center">
+                      <div class="col-xs-12 col-md-6">
+                        <div class="caption-title" data-animation="animated fadeInUp">
+                          <h2>Vivoo</h2>
+                        </div>
+                        <div class="caption-desc mb-5" data-animation="animated fadeInUp">
+                          <p>Es un canal innovador de venta para intermediarios pequeños y medianos de seguros.
                             Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingresos</p>
+                        </div>
+                        <!-- tecnologias -->
+                        <div class="portfolio-screen-content">
+                          <div class=" title-general-tech container">
+                            <p>Technology Stack</p>
+
                           </div>
-                          <div class="caption-button" data-animation="animated fadeInUp">
+
+                          <div class="main-tech__content--portfolio container">
+                            <div class="main-client__item">
+                              <div class="main-client__img">
+                                <img class="img-round" src="assets/img/stack/20170420_React_logo_wordmark.png">
+
+                              </div>
+                            </div>
+                            <div class="main-client__item">
+                              <div class="main-client__img">
+                                <img class="img-round" src="assets/img/stack/5848093ccef1014c0b5e48fc.png">
+                              </div>
+                            </div>
+                            <div class="main-client__item">
+                              <div class="main-client__img">
+                                <img class="img-round" src="assets/img/stack/Q361JHE.png">
+
+                              </div>
+                            </div>
+
+                            <div class="main-client__item">
+                              <div class="main-client__img">
+                                <img class="img-round" src="assets/img/stack/laravel-logo-png.png">
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <!-- <div class="caption-button" data-animation="animated fadeInUp">
                             <a href="#open-modal" class="button " > Ver más</a>
 
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                          <div class="top">
-                            <div class="caption-photo one" data-animation="animated fadeInRight">
-                              <div class="phone-mock">
-                                <img src="assets/img/screen-slider.png" alt="">
-                                <div class="screen">
-                                  <img src="assets/img/phoe.png" alt="">
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                          <div class="top">
-                            <div class="caption-photo two" data-animation="animated fadeInRight">
-                              <div class="phone-mock phone-mock-second">
-                                <img src="assets/img/screen-slider.png" alt="">
-                                <div class="screen2">
-                                  <img src="assets/img/phoe.png" alt="">
-                                </div>
-                              </div>
-                              <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
-                            </div>
-                          </div>
-                        </div>
+                          </div> -->
                       </div>
-                    </div>
-                    <div class="item row">
-                      <div class="v-center">
-                        <div class="col-xs-12 col-md-6">
-                          <div class="caption-title" data-animation="animated fadeInUp">
-                            <h2>ChinChin</h2>
-                          </div>
-                          <div class="caption-desc" data-animation="animated fadeInUp">
-                            <p>ChinChin es una aplicación móvil donde podrás hacer pedidos de licores a domicilio con
-                            precios competitivos en la cuidad de Bogotá.</p>
-                          </div>
-                          <div class="caption-button" data-animation="animated fadeInUp">
-                            <a href="#" class="button">Ver más</a>
+                      <!-- <div class="col-xs-6 col-md-3">
+                        <div class="top">
+                          <div class="caption-photo one" data-animation="animated fadeInRight">
+                            <div class="phone-mock">
+                              <img src="assets/img/screen-slider.png" alt="">
+                              <div class="screen">
+                                <img src="assets/img/phoe.png" alt="">
+                              </div>
+                            </div>
+
                           </div>
                         </div>
-                        <div class="col-xs-6 col-md-3">
-                          <div class="top">
-                            <div class="caption-photo one" data-animation="animated fadeInRight">
-
-                              <img width="500px" src="assets/img/dashboard_full_2.png" alt="">
+                      </div> -->
+                      <div class="col-xs-6 col-md-6" style="text-align: center;">
+                        <div class="top">
+                          <div class="" data-animation="animated fadeInRight">
+                            <img class="phone-mockup" src="assets/img/screen_portfolio.png" alt="">
+                            <div class="main-screen">
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/gallery-2.jpg" alt="">
+                              </div>
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/portfolio-img.png" alt="">
+                              </div>
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/portfolio-img.png" alt="">
+                              </div>
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/portfolio-img.png" alt="">
+                              </div>
                             </div>
+                            <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
                           </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                          <div class="top">
-                            <div class="caption-photo two" data-animation="animated fadeInRight">
-                            <!-- <div class="phone-mock phone-mock-second">
-                                        <img src="assets/img/screen-slider.png" alt="">
-                                      </div> -->
-                                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item row">
-                              <div class="v-center">
-                                <div class="col-xs-12 col-md-6">
-                                  <div class="caption-title" data-animation="animated fadeInUp">
-                                    <h2>Tiver</h2>
-                                  </div>
-                                  <div class="caption-desc" data-animation="animated fadeInUp">
-                                    <p>Esta app te permite disfrutar de los servicios personales que utilizamos todos los días,
-                                    desde la comodidad del lugar que estes.</p>
-                                  </div>
-                                  <div class="caption-button" data-animation="animated fadeInUp">
-                                    <a href="#" class="button">Ver más</a>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                  <div class="top">
-                                    <div class="caption-photo one" data-animation="animated fadeInRight">
-                            <!-- <div class="phone-mock">
-                                        <img src="assets/img/screen-slider.png" alt="">
-                                      </div> -->
-                                      <img width="500px" src="assets/img/dashboard_full_3.png" alt="">
-                            <!-- <div class="screen">
-                                        <img src="assets/img/phoe.png" alt="">
-                                      </div> -->
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                  <div class="top">
-                                    <div class="caption-photo two" data-animation="animated fadeInRight">
-                            <!-- <div class="phone-mock phone-mock-second">
-                                        <img src="assets/img/screen-slider.png" alt="">
-                                      </div> -->
-                                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item row">
-                              <div class="v-center">
-                                <div class="col-xs-12 col-md-6">
-                                  <div class="caption-title" data-animation="animated fadeInUp">
-                                    <h2>Mímeza App</h2>
-                                  </div>
-                                  <div class="caption-desc" data-animation="animated fadeInUp">
-                                    <p>Mimeza es la nueva aplicación para hacer reservas en restaurantes de Bogotá</p>
-                                  </div>
-                                  <div class="caption-button" data-animation="animated fadeInUp">
-                                    <a href="#" class="button">Ver más</a>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                  <div class="top">
-                                    <div class="caption-photo one" data-animation="animated fadeInRight">
-                                      <div class="phone-mock">
-                                        <img src="assets/img/screen-slider.png" alt="">
-                                        <div class="screen">
-                                          <img src="assets/img/phoe.png" alt="">
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                  <div class="top">
-                                    <div class="caption-photo two" data-animation="animated fadeInRight">
-                                      <div class="phone-mock phone-mock-second">
-                                        <img src="assets/img/screen-slider.png" alt="">
-                                      </div>
-                                      <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators caption-indector">
-                            <li data-target="#caption_slide" data-slide-to="0" class="active">
-                              <strong>Vivoo</strong>App movil.
-                            </li>
-                            <li data-target="#caption_slide" data-slide-to="1">
-                              <strong>ChinChin </strong>Aplicacion movil.
-                            </li>
-                            <li data-target="#caption_slide" data-slide-to="2">
-                              <strong>Tiver</strong>consectetur adipisicing elit.
-                            </li>
-                            <li data-target="#caption_slide" data-slide-to="3">
-                              <strong>Mímeza App </strong>Aplicacion web
-                            </li>
-                          </ol>
                         </div>
                       </div>
                     </div>
                   </div>
-                </section>
+                  <div class="item row">
+                    <div class="v-center">
+                      <div class="col-xs-12 col-md-6">
+                        <div class="caption-title" data-animation="animated fadeInUp">
+                          <h2>ChinChin</h2>
+                        </div>
+                        <div class="caption-desc" data-animation="animated fadeInUp">
+                          <p>ChinChin es una aplicación móvil donde podrás hacer pedidos de licores a domicilio con
+                            precios competitivos en la cuidad de Bogotá.</p>
+                        </div>
+                        <div class="caption-button" data-animation="animated fadeInUp">
+                          <a href="#" class="button">Ver más</a>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <div class="top">
+                          <div class="caption-photo one" data-animation="animated fadeInRight">
 
-                <!--Feature-area/-->
+                            <img width="500px" src="assets/img/dashboard_full_2.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <div class="top">
+                          <div class="caption-photo two" data-animation="animated fadeInRight">
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item row">
+                    <div class="v-center">
+                      <div class="col-xs-12 col-md-6">
+                        <div class="caption-title" data-animation="animated fadeInUp">
+                          <h2>Tiver</h2>
+                        </div>
+                        <div class="caption-desc" data-animation="animated fadeInUp">
+                          <p>Esta app te permite disfrutar de los servicios personales que utilizamos todos los días,
+                            desde la comodidad del lugar que estes.</p>
+                        </div>
+                        <div class="caption-button" data-animation="animated fadeInUp">
+                          <a href="#" class="button">Ver más</a>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <div class="top">
+                          <div class="caption-photo one" data-animation="animated fadeInRight">
+
+                            <img width="500px" src="assets/img/dashboard_full_3.png" alt="">
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <div class="top">
+                          <div class="caption-photo two" data-animation="animated fadeInRight">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item row">
+                    <div class="v-center">
+                      <div class="col-xs-12 col-md-6">
+                        <div class="caption-title" data-animation="animated fadeInUp">
+                          <h2>Mímeza App</h2>
+                        </div>
+                        <div class="caption-desc" data-animation="animated fadeInUp">
+                          <p>Mimeza es la nueva aplicación para hacer reservas en restaurantes de Bogotá</p>
+                        </div>
+                        <div class="caption-button" data-animation="animated fadeInUp">
+                          <a href="#" class="button">Ver más</a>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6 col-md-6">
+                        <div class="top">
+                          <div class="" data-animation="animated fadeInRight">
+                            <img class="phone-mockup" src="assets/img/screen_portfolio.png" alt="">
+                            <div class="main-screen">
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/gallery-2.jpg" alt="">
+                              </div>
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/portfolio-img.png" alt="">
+                              </div>
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/portfolio-img.png" alt="">
+                              </div>
+                              <div class="main-screen__portfolio_img">
+                                <img src="assets/img/portfolio-img.png" alt="">
+                              </div>
+                            </div>
+                            <!-- <img src="assets/img/screen-2.jpg" alt=""> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators caption-indector">
+                  <li data-target="#caption_slide" data-slide-to="0" class="active">
+                    <strong>Vivoo</strong>App movil.
+                  </li>
+                  <li data-target="#caption_slide" data-slide-to="1">
+                    <strong>ChinChin </strong>Aplicacion movil.
+                  </li>
+                  <li data-target="#caption_slide" data-slide-to="2">
+                    <strong>Tiver</strong>consectetur adipisicing elit.
+                  </li>
+                  <li data-target="#caption_slide" data-slide-to="3">
+                    <strong>Mímeza App </strong>Aplicacion web
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Feature-area/-->
 
 
       <!-- 
@@ -846,60 +1024,36 @@
   <section class="main-client mt-5" id="client">
     <div class="container">
       <div class="title-general">
-        <p>Nuestros clientes</p>
-
+        <p class="animated fadeInUp wow">Nuestros clientes</p>
       </div>
       <div class="main-client__content">
-        <div class="main-client__item">
-          <div class="main-client__img">
+        <div  class="main-client__item animated fadeInUp wow">
+          <div id="logo-1" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
+        <div class="main-client__item animated fadeInUp wow">
+          <div  id="logo-2" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
+        <div class="main-client__item animated fadeInUp wow">
+          <div id="logo-3" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
+        <div  class="main-client__item animated fadeInUp wow">
+          <div id="logo-4" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
-            <img class="img-round" src="assets/img/horizontal.png">
-
-          </div>
-        </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
+        <div  class="main-client__item animated fadeInUp wow">
+          <div id="logo-5" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
 
           </div>
         </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
-            <img class="img-round" src="assets/img/horizontal.png">
-
-          </div>
-        </div>
-
-
-        <div class="main-client__item">
-          <div class="main-client__img">
-            <img class="img-round" src="assets/img/horizontal.png">
-          </div>
-        </div>
-        <div class="main-client__item">
-          <div class="main-client__img">
-            <img class="img-round" src="assets/img/horizontal.png">
-          </div>
-        </div>
+     
       </div>
     </div>
   </section>
@@ -908,11 +1062,11 @@
   <!---------------------------------------------- cafe ---------------------------------------------->
   <section class="main-cafe container">
     <div class="main-cafe_grid">
-      <div class="main-cafe__img">
+      <div class="main-cafe__img animated fadeInUp wow">
         <img src="assets/img/cafe.png" alt="">
       </div>
       <div class="main-cafe__text">
-        <p>Hablemos! Matcha? Café? Nosotros invitamos!</p>
+        <p class="animated fadeInUp wow">Hablemos! Matcha? Café? Nosotros invitamos!</p>
         <a data-toggle="modal" data-target="#exampleModalCenter" href="#">Hablemos</a>
       </div>
     </div>
@@ -923,7 +1077,7 @@
   <section id="contact" class="main-contact">
     <div class="container">
       <div class="title-general">
-        <p>Contacto</p>
+        <p class="animated fadeInUp wow">Contacto</p>
       </div>
       <div class="main-contact--grid">
         <div class="main-contact-item">
@@ -954,10 +1108,10 @@
         <div class="main-contact-item">
           <img class="map" src="assets/img/map.png" alt="">
           <ul>
-            <li><i class="fa fa-map-marker"></i><a href="">Bogotá DC</a></li>
-            <li><i class="fa fa-envelope"></i><a href="malito:info@myass.co">Info@myass.co</a></li>
-            <li> <i class="fa fa-phone"></i><a href="tel:3108751971">COL:(310)8751971</a></li>
-            <li><i class="fa fa-phone"></i><a href="tel:6469293711">US:(646)9293711</a></li>
+            <li class="animated fadeInUp wow"><i class="fa fa-map-marker"></i><a href="">Bogotá DC</a></li>
+            <li class="animated fadeInUp wow"><i class="fa fa-envelope"></i><a href="malito:info@myass.co">Info@myass.co</a></li>
+            <li class="animated fadeInUp wow"> <i class="fa fa-phone"></i><a href="tel:3108751971">COL:(310)8751971</a></li>
+            <li class="animated fadeInUp wow"><i class="fa fa-phone"></i><a href="tel:6469293711">US:(646)9293711</a></li>
           </ul>
         </div>
       </div>
@@ -972,7 +1126,7 @@
     </center>
   </footer>
   <!-- modal potfolio -->
-  <div id="open-modal" class="modal-window">
+   <!-- <div id="open-modal" class="modal-window">
     <div>
       <a href="#" title="Close" class="modal-close modal-close_modal"><img src="assets/img/arrow.png" alt="">Volver</a>
       <div class="portfolio-content container">
@@ -985,11 +1139,11 @@
             <p>Es un canal innovador de venta para intermediarios pequeños y medianos de seguros.
               Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingresos ,Es un canal innovador
               de venta para intermediarios pequeños y medianos de seguros.
-            Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingreso</p>
+              Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingreso</p>
 
           </div>
         </div>
-        <!-- tecnologias -->
+        
         <div class="portfolio-screen-content">
           <div class="title-general title-general-tech container">
             <p>Technology Stack</p>
@@ -1093,28 +1247,32 @@
         </div>
 
         <div class="portfolio-description">
-          <p> <strong>Lorem ipsum</strong>  Es un canal innovador de venta para intermediarios pequeños y medianos de seguros.
+          <p> <strong>Lorem ipsum</strong> Es un canal innovador de venta para intermediarios pequeños y medianos de
+            seguros.
             Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingresos ,Es un canal innovador
             de venta para intermediarios pequeños y medianos de seguros.
-          Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingreso</p>
+            Fortaleciendo la relación de éstos con sus clientes y generando nuevos ingreso</p>
 
         </div>
       </div>
     </div>
-  </div>
+  </div>  -->
   <!--<script src="assets/js/jquery.min.js"></script>-->
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/setting-slick.js"></script>
   <!--Plugin-JS-->
   <script src="assets/js/owl.carousel.min.js"></script>
-
-  <script src="assets/js/scrollUp.min.js"></script>
   <script src="assets/js/magnific-popup.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
 
   <script src="assets/js/detectmobilebrowser.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+<script  src="assets/js/script.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
 
@@ -1124,136 +1282,62 @@
 
   <!-- Modal contat -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered size-modal  " role="document">
-    <div class="modal-content">
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered size-modal  " role="document">
+      <div class="modal-content">
         <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div> -->
-      <div class="modal-body">
-        <div class="modal-cafe--grid">
-          <div class="modal-cafe--item">
-            <div class="cafe-img">
-              <img src="assets/img/cae.png" alt="">
+        <div class="modal-body">
+          <div class="modal-cafe--grid">
+            <div class="modal-cafe--item">
+              <div class="cafe-img">
+                <img src="assets/img/cae.png" alt="">
+
+              </div>
+            </div>
+            <div class="modal-cafe--item">
+              <p class="cafe-title">Transforma tus
+                ideas en realidad nosotros invitamos!</p>
+
+
+              <form class="form-cafe ">
+                <div class="row" style="    margin-bottom: 30px;">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre y apellido">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col">
+                    <textarea class="form-control" id="Tu mensaje" placeholder="Tu mensaje" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="btn-general">
+                  <a href="">Enviar</a>
+                </div>
+              </form>
+
 
             </div>
           </div>
-          <div class="modal-cafe--item">
-            <p class="cafe-title">Transforma tus
-            ideas en realidad nosotros invitamos!</p>
-
-
-            <form class="form-cafe ">
-              <div class="row" style="    margin-bottom: 30px;">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre y apellido">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Email">
-                </div>
-                <div class="col">
-                  <textarea class="form-control" id="Tu mensaje" placeholder="Tu mensaje" rows="3"></textarea>
-                </div>
-              </div>
-              <div class="btn-general">
-                <a href="">Enviar</a>
-              </div>
-            </form>
-
-
-          </div>
         </div>
-      </div>
         <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div> -->
+      </div>
     </div>
   </div>
-</div>
-<!-- modal potfolio -->
+  <!-- modal potfolio -->
 
-</div>
-<script>
-  //******************************nav active***************************************//
-// Cache selectors
-var lastId,
-topMenu = $("#mainNav"),
-topMenuHeight = topMenu.outerHeight()+1,
- // All list items
- menuItems = topMenu.find("a"),
- // Anchors corresponding to menu items
- scrollItems = menuItems.map(function(){
-   var item = $($(this).attr("href"));
-   if (item.length) { return item; }
- });
+  </div>
+  <script>
 
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-menuItems.click(function(e){
-  var href = $(this).attr("href"),
-  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({ 
-    scrollTop: offsetTop
-  }, 850);
-  e.preventDefault();
-});
-
-// Bind to scroll
-$(window).scroll(function(){
-   // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastId !== id) {
-     lastId = id;
-       // Set/remove active class
-       menuItems
-       .parent().removeClass("active-nav")
-       .end().filter("[href=#"+id+"]").parent().addClass("active-nav");
-     }                   
-   });
-
-
-
-( function( $ ) {
-  const $document = $(document);
-  
-  const initTyped = (selector, options) => {
-   let settings = options;
-   if (!settings) {
-    settings = {
-     stringsElement: '#typed-content',
-     typeSpeed: 60,
-     backSpeed: 40,
-     loop: true,
-     showCursor: true
-   };
- }
-
- let typed = new Typed(selector, settings);
-}
-
-$document.ready(() => {
-  //  console.log('ready');
-
-  initTyped('.js-typed');
-});
-})(jQuery);
-
-
-</script>
+  </script>
 </body>
 
 </html>
