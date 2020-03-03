@@ -1643,6 +1643,7 @@ color: #727276;
 .timeline_body:hover .timeline_img {
   opacity: 1;
   transition: all 0.35s ease;
+  width: 200px;
 }
 
 .active-time .timeline_img {
