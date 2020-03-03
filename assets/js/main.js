@@ -201,16 +201,16 @@ $(function () {
 });
 
 
-$(function () {
-  $('.modal').click(function () {
-    $(".main-cafe_grid").removeClass("main-cafe__img-none");
-  });
+// $(function () {
+//   $('.modal').click(function () {
+//     $(".main-cafe_grid").removeClass("main-cafe__img-none");
+//   });
   
-  $('#modal-none').click(function () {
-    $(".main-cafe_grid").addClass("main-cafe__img-none");
-  });
+//   $('#modal-none').click(function () {
+//     $(".main-cafe_grid").addClass("main-cafe__img-none");
+//   });
  
-});
+// });
 
 /**Responsive**/
 

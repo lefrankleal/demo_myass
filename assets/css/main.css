@@ -2822,10 +2822,10 @@ body {
 .top {
   margin-bottom: 62px;
 }
-.main-cafe__img-none img{
+/* .main-cafe__img-none img{
   opacity: 0;
   transition: .5s;
-}
+} */
 /********************************* portfolio */
 .modal-dialog {
   width: 740px;
