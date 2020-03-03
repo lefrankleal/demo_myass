@@ -137,7 +137,7 @@ $('.main-tech__content--portfolio').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000
     }
   }
@@ -146,7 +146,7 @@ $('.main-tech__content--portfolio').slick({
 
 $('.main-timeline').slick({
   infinite: true,
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
   dots: false,
   arrows: false,
@@ -259,16 +259,16 @@ $('.screen-slider__porfolio').slick({
 
 $('.main-screen').slick({
  infinite: false,
- slidesToShow: 1,
+ slidesToShow: 3,
  slidesToScroll: 1,
- dots: false,
+ dots: true,
  centerMode:false,
  variableWidth: true,
  focusOnSelect: true,
  cssEase: 'linear',
  touchMove: true,
  autoplay:true,
- arrows: true,
+ arrows: false,
  responsive: [{
   breakpoint: 1200,
   settings: {
@@ -291,7 +291,7 @@ $('.main-screen').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1000
   }
 }
