@@ -87,18 +87,18 @@ setInterval(() => {
 
 // active timeline
 
-// setInterval(() => {
-//   $('#time-1').removeClass('active-time')
-//   $('#time-2').removeClass('active-time')
-//   $('#time-3').removeClass('active-time')
-//   $('#time-4').removeClass('active-time')
-//   $('#time-5').removeClass('active-time')
-//   let random = Math.floor(Math.random() * 6) + 1;
-//   $('#time-' + random).addClass("active-time ")
-//   if(showActive==true){
+setInterval(() => {
+  $('#time-1').removeClass('active-time')
+  $('#time-2').removeClass('active-time')
+  $('#time-3').removeClass('active-time')
+  $('#time-4').removeClass('active-time')
+  $('#time-5').removeClass('active-time')
+  let random = Math.floor(Math.random() * 6) + 1;
+  $('#time-' + random).addClass("active-time ")
+  if(showActive==true){
 
-//   }
-// }, 2000)
+  }
+}, 2000)
 
 
 // active logos clientes
