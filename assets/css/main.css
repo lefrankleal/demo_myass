@@ -329,8 +329,11 @@ body {
   bottom: 0;
   background-size: 100%;
   top: 28%;
-  background-repeat: no-repeat !important;
-  z-index: 1;
+  background: linear-gradient(to bottom, rgba(95, 195, 247, 0) 0%, rgb(255, 255, 255) 100%);
+  z-index: 0;
+}
+.main-cafe__img  img{
+  width: 358px;
 }
 
 .main-client__content .main-client__item img {
@@ -422,6 +425,7 @@ body {
 .main-cafe__text {
   font-size: 1.9rem;
   text-align: center;
+  margin-left: 70px;
 }
 
 .modal-content-portfolio {
@@ -1001,9 +1005,14 @@ color: #727276;
 
 .main-banner .mask .main-banner__text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   width: 100%;
   text-align: center;
+}
+.heading{
+  position: absolute;
+    left: 30%;
+    top: 87%;
 }
 
 .logo-banner img {
@@ -2811,7 +2820,10 @@ body {
 .top {
   margin-bottom: 62px;
 }
-
+.main-cafe__img-none img{
+  opacity: 0;
+  transition: .5s;
+}
 /********************************* portfolio */
 .modal-dialog {
   width: 740px;
@@ -2828,6 +2840,7 @@ body {
   width: 50%;
   position: absolute;
   left: -100px;
+  transform: rotate(-150deg);
 }
 
 .size-modal {
@@ -3521,9 +3534,9 @@ nav ul .active-nav a {
   line-height: 4;
 }
 
-.intro {
+/* .intro {
   margin-top: 49%;
-}
+} */
 
 .img-banner{
   position: absolute;

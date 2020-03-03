@@ -115,6 +115,13 @@ setInterval(() => {
   }
 }, 2000)
 
+
+// fade in
+
+
+
+
+
 function changeActive(){
   showActive=false
 }
@@ -191,6 +198,18 @@ $(function () {
       tabCycle = setInterval(tabChange, 100000)
     }, 100000);
   });
+});
+
+
+$(function () {
+  $('.modal').click(function () {
+    $(".main-cafe_grid").removeClass("main-cafe__img-none");
+  });
+  
+  $('#modal-none').click(function () {
+    $(".main-cafe_grid").addClass("main-cafe__img-none");
+  });
+ 
 });
 
 /**Responsive**/
