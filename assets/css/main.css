@@ -1011,7 +1011,7 @@ color: #727276;
 }
 .heading{
   position: absolute;
-    left: 30%;
+  left: 32%;
     top: 87%;
 }
 
@@ -1041,7 +1041,8 @@ color: #727276;
 .main-banner .mask .main-banner__text .main-banner__title span {
   padding: 0 25px;
   color: #fff;
-  font-size: 60px;
+  font-size: 36px;
+
   font-weight: 500;
   line-height: 1;
   margin: 0;
