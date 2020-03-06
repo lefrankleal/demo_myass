@@ -10,9 +10,9 @@
   <meta name="keywords" content="Add your, business, website, keywords, here">
   <link href="//db.onlinewebfonts.com/c/228984258eaa17737d6d3fdcc03f6f1f?family=GeosansLight" rel="stylesheet"
     type="text/css"> <!-- Favicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
 
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
@@ -56,13 +56,14 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js navbar-none " id="navbar">
 
       <div class="container">
-        <div class="main-brand">
+        <!-- <div class="main-brand">
           <a class="navbar-brand" href="#"> <img id="iso" src="assets/img/iso-color.png"> </a>
           <span class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
             type="button">
             <span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
-        </div>
+        </div> -->
         <div class="navbar-collapse offcanvas-collapse">
+          <a class="navbar-brand" href="#"> <img id="iso" src="assets/img/iso-color.png"> </a>
           <ul class="navbar-nav mr-autos" id="mainNav">
             <li class="nav-item active-nav">
               <a class="nav-link " href="#home"> Home</a>
@@ -93,42 +94,7 @@
   </header>
   <!------------------------------------------- BANNER---------------------------------------- -->
   <div class="main-banner">
-    <!-- <div class="split-slideshow">
-      <img class="img-banner" src="assets/img/logo.png" alt="">
-      <div class="slideshow">
-        <div class="slider">
-          <div class="item">
-            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
-            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-            src="assets/img/banner.mp4"></video>
-          </div>
-          <div class="item">
-            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
-            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-            src="assets/img/banner.mp4"></video>
-          </div>
-          <div class="item">
-            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
-            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-            src="assets/img/banner.mp4"></video>
-          </div>
-          <div class="item">
-            <video class="d-none d-sm-block video" autoplay loop width="100%" muted=""
-            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-            src="assets/img/banner.mp4"></video>
-          </div>
-        </div>
-      </div>
-      <div class="slideshow-text">
- 
-        <div class="item">Beyond Digital Experiences</div>
-        <div class="item">Created by A Marketer Expert </div>
-     
-        <div class="item">Pro Developers & UX/UI Designers</div>
-      </div>
-    </div>
-     -->
-     <div class="main-banner__content">
+    <div class="main-banner__content--body">
       <div class="main-banner__item">
         <div class="mask">
           <div class="main-banner__text">
@@ -140,7 +106,7 @@
                 <span class="heading__static"> <span class="heading__animated js-typed"></span></span>
                 <ul id="typed-content" class="hidden">
                   <li>Beyond Digital Experiences</li>
-                  <li> A Marketer Expert</li>
+                  <li>Created by a Marketer Expert</li>
                   <li>Pro Developers & UX/UI Designers</li>
                 </ul>
               </h1>
@@ -148,17 +114,13 @@
           </div>
         </div>
         <div class="main-banner__img">
-          <video class="d-none d-sm-block video" autoplay loop width="100%" muted="" preload="auto"
-            style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-            src="assets/img/banner.mp4"></video>
+          <video class="d-none d-sm-block video" autoplay loop width="100%" muted="" preload="auto" style="  "
+            data-load-priority="0" src="assets/img/banner.mp4"></video>
 
 
         </div>
       </div>
-    </div> 
-    <video class="d-none d-sm-block video video-xs" autoplay loop width="100%" muted=""
-    style="    width: 100%;height: 100vh; object-fit: cover;" data-load-priority="0"
-    src="assets/img/banner.mp4"></video>
+    </div>
     <div class="main-mask_nube"></div>
   </div>
   <!------------------------------------------- BANNER---------------------------------------- -->
@@ -179,7 +141,7 @@
           iOS/Android y Hi End Web Apps.</span></center>
     </div>
     <div class="main-about__grid">
-      <div id="card-1" class="main-about__card  ">
+      <div id="card-1" class="main-about__card  " onmouseover="changeActive()">
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
@@ -198,17 +160,17 @@
         </div>
         <div class="main-about__iconos">
           <p class="main-img__icon">
-            <img src="assets/img/monday2.png" alt="">
-            <img src="assets/img/slack.png" alt="">
+            <img src="assets/img/ser.png" alt="">
+
           </p>
         </div>
       </div>
       <!----------- CARD2--------->
-      <div id="card-2" class="main-about__card ">
+      <div id="card-2" class="main-about__card " onmouseover="changeActive()">
         <div class="main_about__icon">
           <div class="icon">
             <img class="circle" src="assets/img/circle.svg" alt="">
-            <span class="flaticon-idea"></span>
+            <span class="flaticon-bulb"></span>
           </div>
         </div>
         <div class="main-about__title">
@@ -277,13 +239,13 @@
       <div id="time-1" class="timeline_body">
         <div class="timeline_title">
           <h3>Workshop</h3>
-         
-          <p> <br><br>Visualizar su idea/proyecto, preparar documentos y confirmar cotización!</p>
+
+          <p> Entendemos y proyectamos su idea, preparamos documentos y se confirma la cotización.</p>
         </div>
-        
+
         <div class="timeline_elements">
           <div class="timeline_img">
-            <img src="assets/img/wi.jpg" alt="">
+            <img src="assets/img/workhop.jpg" alt="">
           </div>
           <div class="timeline_icon">
             <i class="flaticon-video-conference"></i>
@@ -302,7 +264,7 @@
         </div>
         <div class="timeline_elements">
           <div class="timeline_img">
-            <img src="assets/img/wi.jpg" alt="">
+            <img src="assets/img/prueba.jpg" alt="">
           </div>
           <div class="timeline_icon">
             <i class="flaticon-internet"></i>
@@ -322,7 +284,7 @@
         </div>
         <div class="timeline_elements">
           <div class="timeline_img">
-            <img src="assets/img/wi.jpg" alt="">
+            <img src="assets/img/diseño.jpg" alt="">
           </div>
           <div class="timeline_icon">
             <i class="flaticon-compass"></i>
@@ -332,15 +294,15 @@
 
       <div id="time-4" class="timeline_body">
         <div class="timeline_title">
-        <h3>Desarrollo y Pruebas QA</h3>
-        <p>Usando la metodología SCRUM, nuestro
-          equipo desarrollará su proyecto, haremos Pruebas Alfa y
-          Beta con usted y continuaremos con
-          nuestra Etapa de QA.</p>
+          <h3>Desarrollo y Pruebas QA</h3>
+          <p>Usando la metodología SCRUM, nuestro
+            equipo desarrollará su proyecto, haremos Pruebas Alfa y
+            Beta con usted y continuaremos con
+            nuestra Etapa de QA.</p>
         </div>
         <div class="timeline_elements">
           <div class="timeline_img">
-            <img src="assets/img/wi.jpg" alt="">
+            <img src="assets/img/prueba.jpg" alt="">
           </div>
           <div class="timeline_icon">
             <i class="flaticon-qa"></i>
@@ -358,7 +320,7 @@
         </div>
         <div class="timeline_elements">
           <div class="timeline_img">
-            <img src="assets/img/wi.jpg" alt="">
+            <img src="assets/img/soporte.jpg" alt="">
           </div>
           <div class="timeline_icon">
             <i class="flaticon-help"></i>
@@ -368,7 +330,7 @@
     </div>
 
     <!-- timline xs slider -->
-<div class="main-timeline">
+    <!-- <div class="main-timeline">
   <div class="timeline_body">
     <div class="timeline_title">
       <h3>Workshop</h3>
@@ -460,12 +422,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-   
+
     <!------------------------------------------- timeline XS----------------------------------------- -->
-    <!-- <div id="marzen" class="tab-panel timeline-xs ">
-      <img class="background-ola" src="assets/img/clientes.png" alt="">
+    <div id="marzen" class="tab-panel timeline-xs ">
+      <!-- <img class="background-ola" src="assets/img/clientes.png" alt=""> -->
       <div class="col-sm-12">
         <div class="panel general-panel circle-pannel">
           <div class="panel-heading">
@@ -480,69 +442,81 @@
           </div>
           <div class="panel-body">
             <div class="tab-content">
-              <div id="tab1" class="tab-pane in active">
-                <h4>Workshop</h4>
-                <div class="row">
-                  <p class="col-sm-12">
-                    Visualizar su idea/proyecto,
-                    preparar documentos y
-                    confirmar cotización!
-                  </p>
+
+              <div id="tab1" class="tab-pane in active" style="background-image: url(assets/img/workhop.jpg);">
+                <div class="mask-time">
+                  <h4>Workshop</h4>
+                  <div class="row">
+                    <p class="col-sm-12">
+                      Visualizar su idea/proyecto,
+                      preparar documentos y
+                      confirmar cotización!
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div id="tab2" class="tab-pane">
-                <h4>Wireframing</h4>
-                <div class="row">
-                  <p class="col-sm-12">
-                    Nos sentamos con usted! a
-                    preparar ese super Mockup,
-                    creamos esa guia visual y
-                    esperamos la acción de
-                    nuestro equipo de diseño! </p>
+
+              <div id="tab2" class="tab-pane" style="background-image: url(assets/img/workhop.jpg);">
+                <div class="mask-time">
+                  <h4>Wireframing</h4>
+                  <div class="row">
+                    <p class="col-sm-12">
+                      Nos sentamos con usted! a
+                      preparar ese super Mockup,
+                      creamos esa guia visual y
+                      esperamos la acción de
+                      nuestro equipo de diseño! </p>
+                  </div>
                 </div>
               </div>
-              <div id="tab3" class="tab-pane">
-                <h4>Project Kickoff & Diseño</h4>
-                <div class="row">
-                  <p class="col-sm-12">
-                    Conocera a nuestro equipo! Le
-                    daremos una especie de guia
-                    sobre el proceso de desarrollo
-                    a iniciar y estara a un paso de
-                    aprobar el diseño final de su
-                    proyecto.
-                  </p>
+              <div id="tab3" class="tab-pane" style="background-image: url(assets/img/diseño.jpg);">
+                <div class="mask-time">
+                  <h4>Project Kickoff & Diseño</h4>
+                  <div class="row">
+                    <p class="col-sm-12">
+                      Conocera a nuestro equipo! Le
+                      daremos una especie de guia
+                      sobre el proceso de desarrollo
+                      a iniciar y estara a un paso de
+                      aprobar el diseño final de su
+                      proyecto.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div id="tab4" class="tab-pane">
-                <h4>Desarrollo y Pruebas QA</h4>
-                <div class="row">
-                  <p class="col-sm-12">
-                    Usando la metodología SCRUM, nuestro
-                    equipo desarrollará su proyecto
-                    conectando todo el diseño aprobado, una
-                    vez hecho esto, haremos Pruebas Alfa y
-                    Beta con usted y continuaremos con
-                    nuestra Etapa de QA.
-                  </p>
+              <div id="tab4" class="tab-pane" style="background-image: url(assets/img/prueba.jpg);">
+                <div class="mask-time">
+                  <h4>Desarrollo y Pruebas QA</h4>
+                  <div class="row">
+                    <p class="col-sm-12">
+                      Usando la metodología SCRUM, nuestro
+                      equipo desarrollará su proyecto
+                      conectando todo el diseño aprobado, una
+                      vez hecho esto, haremos Pruebas Alfa y
+                      Beta con usted y continuaremos con
+                      nuestra Etapa de QA.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div id="tab5" class="tab-pane">
-                <h4>Lanzamiento/entrega y Soporte</h4>
-                <div class="row">
-                  <p class="col-sm-12">
-                    Su proyecto esta listo para ser
-                    lanzado! Recuerde que es
-                    necesario darle el soporte y
-                    mantenimiento necesario!
-                  </p>
+              <div id="tab5" class="tab-pane" style="background-image: url(assets/img/soporte.jpg);">
+                <div class="mask-time">
+                  <h4>Lanzamiento/entrega y Soporte</h4>
+                  <div class="row">
+                    <p class="col-sm-12">
+                      Su proyecto esta listo para ser
+                      lanzado! Recuerde que es
+                      necesario darle el soporte y
+                      mantenimiento necesario!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
   <!------------------------------------------- timeline----------------------------------------- -->
 
@@ -561,7 +535,14 @@
                   <div class="circle-services"></div>
                 </div>
               </div>
-              <h5 class="flipbox_title">Aplicaciones Moviles</h5>
+              <div class="titulo">
+                <div>
+                  <h5 class="flipbox_title">Aplicaciones Moviles</h5>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/android2.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/mac.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/react.png" alt=""></i>
+                </div>
+              </div>
               <div class="flipbox_description">
                 <div class="main-services__description--card">
                   <p>
@@ -605,7 +586,15 @@
                   <div class="circle-services"></div>
                 </div>
               </div>
-              <h5 class="flipbox_title">Web Apps</h5>
+              <div class="titulo">
+                <h5 class="flipbox_title">Web Apps</h5>
+                <div>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/android2.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/mac.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/react.png" alt=""></i>
+                </div>
+              </div>
+
               <div class="flipbox_description">
                 <div class="main-services__description--card">
                   <p>
@@ -619,9 +608,6 @@
                         Interface) unico para cada proyecto
 
                       </li>
-
-
-
                     </ul>
                   </p>
                 </div>
@@ -662,15 +648,21 @@
                   <div class="circle-services"></div>
                 </div>
               </div>
-              <h5 class="flipbox_title">Diseño - UX/UI</h5>
+              <div class="titulo">
+                <h5 class="flipbox_title">Diseño - UX/UI</h5>
+                <div>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/invision.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/zeplin1.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/react.png" alt=""></i>
+                </div>
+              </div>
+
+
               <div class="flipbox_description">
                 <div class="main-services__description--card">
                   <p>
                     <ul>
-                      <li>Diseño unico en base a UX/UI (User Experiences/User Interface)****
-
-
-
+                      <li>Diseño unico en base a UX/UI (User Experiences/User Interface)
                       </li>
                       <li> Prototipado en tiempo record! (Mockup)</li>
                       <li> Enfoque de todos los detalles particulares</li>
@@ -710,7 +702,15 @@
                   <div class="circle-services"></div>
                 </div>
               </div>
-              <h5 class="flipbox_title">Integraciones & APIs</h5>
+              <div class="titulo">
+                <h5 class="flipbox_title">Integraciones & APIs</h5>
+                <div>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/invision.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/zeplin1.png" alt=""></i>
+                  <i class="flipbox_icon"><img src="assets/img/iconos_servicios/react.png" alt=""></i>
+                </div>
+              </div>
+           
               <div class="flipbox_description">
                 <div class="main-services__description--card">
                   <p>
@@ -1037,13 +1037,13 @@
         <p class="animated fadeInUp wow">Nuestros clientes</p>
       </div>
       <div class="main-client__content">
-        <div  class="main-client__item animated fadeInUp wow">
+        <div class="main-client__item animated fadeInUp wow">
           <div id="logo-1" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
         <div class="main-client__item animated fadeInUp wow">
-          <div  id="logo-2" class="main-client__img">
+          <div id="logo-2" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
@@ -1052,18 +1052,18 @@
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
-        <div  class="main-client__item animated fadeInUp wow">
+        <div class="main-client__item animated fadeInUp wow">
           <div id="logo-4" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
           </div>
         </div>
-        <div  class="main-client__item animated fadeInUp wow">
+        <div class="main-client__item animated fadeInUp wow">
           <div id="logo-5" class="main-client__img">
             <img class="img-round" src="assets/img/horizontal.png">
 
           </div>
         </div>
-     
+
       </div>
     </div>
   </section>
@@ -1073,7 +1073,9 @@
   <section class="main-cafe container">
     <div class="main-cafe_grid">
       <div class="main-cafe__img animated fadeInUp wow">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSs_JnC4ivpJPZWyUbVt2DpGnWoiZPshFP-4qa0m61LVYRC7SMQ" alt="">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSs_JnC4ivpJPZWyUbVt2DpGnWoiZPshFP-4qa0m61LVYRC7SMQ"
+          alt="">
       </div>
       <div class="main-cafe__text">
         <p class="animated fadeInUp wow">Hablemos! Matcha? Café? Nosotros invitamos!</p>
@@ -1119,9 +1121,12 @@
           <img class="map" src="assets/img/map.png" alt="">
           <ul>
             <li class="animated fadeInUp wow"><i class="fa fa-map-marker"></i><a href="">Bogotá DC</a></li>
-            <li class="animated fadeInUp wow"><i class="fa fa-envelope"></i><a href="malito:info@myass.co">Info@myass.co</a></li>
-            <li class="animated fadeInUp wow"> <i class="fa fa-phone"></i><a href="tel:3108751971">COL:(310)8751971</a></li>
-            <li class="animated fadeInUp wow"><i class="fa fa-phone"></i><a href="tel:6469293711">US:(646)9293711</a></li>
+            <li class="animated fadeInUp wow"><i class="fa fa-envelope"></i><a
+                href="malito:info@myass.co">Info@myass.co</a></li>
+            <li class="animated fadeInUp wow"> <i class="fa fa-phone"></i><a href="tel:3108751971">COL:(310)8751971</a>
+            </li>
+            <li class="animated fadeInUp wow"><i class="fa fa-phone"></i><a href="tel:6469293711">US:(646)9293711</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -1136,7 +1141,7 @@
     </center>
   </footer>
   <!-- modal potfolio -->
-   <!-- <div id="open-modal" class="modal-window">
+  <!-- <div id="open-modal" class="modal-window">
     <div>
       <a href="#" title="Close" class="modal-close modal-close_modal"><img src="assets/img/arrow.png" alt="">Volver</a>
       <div class="portfolio-content container">
@@ -1280,9 +1285,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
-<script  src="assets/js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+  <script src="assets/js/script.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
 
@@ -1305,7 +1310,9 @@
           <div class="modal-cafe--grid">
             <div class="modal-cafe--item">
               <div class="cafe-img">
-                <img src="https://lh3.googleusercontent.com/proxy/ugqdvCAkQf6PpyvDPZaYyT13YRtzka4eFb3s3WWg3f_oHTtOkYe3fD1rz2DJH0p0XyuvHINTEg5JDmAG_lsGYT0gGJOzQ7sWLDqKAqvE5-2CT89dDOOPXrpQeVjMULX4tF1EaWUlwo3T8PCZFk8" alt="">
+                <img
+                  src="https://lh3.googleusercontent.com/proxy/ugqdvCAkQf6PpyvDPZaYyT13YRtzka4eFb3s3WWg3f_oHTtOkYe3fD1rz2DJH0p0XyuvHINTEg5JDmAG_lsGYT0gGJOzQ7sWLDqKAqvE5-2CT89dDOOPXrpQeVjMULX4tF1EaWUlwo3T8PCZFk8"
+                  alt="">
 
               </div>
             </div>

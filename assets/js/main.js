@@ -74,6 +74,12 @@ $('a.nav-link').hover(function () {
 
 var showActive = true
 
+
+
+function changeActive(){
+  
+  showActive=false
+}
 setInterval(() => {
   $('#card-1').removeClass('active-about main-about__card-line circle-active')
   $('#card-2').removeClass('active-about main-about__card-line circle-active')
@@ -87,18 +93,18 @@ setInterval(() => {
 
 // active timeline
 
-setInterval(() => {
-  $('#time-1').removeClass('active-time')
-  $('#time-2').removeClass('active-time')
-  $('#time-3').removeClass('active-time')
-  $('#time-4').removeClass('active-time')
-  $('#time-5').removeClass('active-time')
-  let random = Math.floor(Math.random() * 6) + 1;
-  $('#time-' + random).addClass("active-time ")
-  if(showActive==true){
+// setInterval(() => {
+//   $('#time-1').removeClass('active-time')
+//   $('#time-2').removeClass('active-time')
+//   $('#time-3').removeClass('active-time')
+//   $('#time-4').removeClass('active-time')
+//   $('#time-5').removeClass('active-time')
+//   let random = Math.floor(Math.random() * 6) + 1;
+//   $('#time-' + random).addClass("active-time ")
+//   if(showActive==true){
 
-  }
-}, 2000)
+//   }
+// }, 2000)
 
 
 // active logos clientes
@@ -122,9 +128,7 @@ setInterval(() => {
 
 
 
-function changeActive(){
-  showActive=false
-}
+
 //wow animation by using with animate css
 var isiPad = (navigator.userAgent.match(/iPad/i) != null);
 if (($.browser.mobile) || (isiPad)) {
