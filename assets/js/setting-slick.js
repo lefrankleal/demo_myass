@@ -1,6 +1,6 @@
 $('.main-banner__content').slick({
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 1,
   speed: 500,
   fade: true,
@@ -43,7 +43,7 @@ $('.main-client__content').slick({
   slidesToShow: 4,
   slidesToScroll:1,
   dots: true,
-  autoplay:false,
+  autoplay: true,
   arrows: false,
   responsive: [{
     breakpoint: 1200,
@@ -81,6 +81,8 @@ $('.main-client__content--portfolio').slick({
   slidesToScroll: 4,
   dots: false,
   arrows: true,
+  autoplay: true,
+
   responsive: [{
     breakpoint: 1200,
     settings: {
@@ -109,12 +111,14 @@ $('.main-client__content--portfolio').slick({
   }
   ]
 });
-$('.main-tech__content--portfolio').slick({
+/*$('.main-tech__content--portfolio').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   dots: false,
   arrows: false,
+  autoplay: true,
+
   responsive: [{
     breakpoint: 1200,
     settings: {
@@ -143,7 +147,7 @@ $('.main-tech__content--portfolio').slick({
   }
   ]
 });
-
+*/
 $('.main-timeline').slick({
   infinite: true,
   slidesToShow: 1,
@@ -258,8 +262,51 @@ $('.screen-slider__porfolio').slick({
 
 
 $('.main-screen').slick({
+ infinite:true,
+ slidesToShow: 2,
+ slidesToScroll: 1,
+ dots: true,
+ touchMove: true,
+ centerMode:false,
+ variableWidth: true,
+ focusOnSelect: true,
+ cssEase: 'linear',
+ touchMove: true,
+ autoplay:false,
+ arrows: false,
+ responsive: [{
+  breakpoint: 1200,
+  settings: {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true
+  }
+},
+{
+  breakpoint: 900,
+  settings: {
+    slidesToShow: 2,
+    slidesToScroll: 2
+  }
+},
+{
+  breakpoint: 600,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: false,
+    autoplaySpeed: 1000
+  }
+}
+]
+});
+
+
+$('.main-screen_mac').slick({
  infinite: false,
- slidesToShow: 3,
+ slidesToShow: 1,
  slidesToScroll: 1,
  dots: true,
  centerMode:false,
@@ -297,6 +344,11 @@ $('.main-screen').slick({
 }
 ]
 });
+
+
+
+
+
 
 // $('.main-steps__content').slick({
 

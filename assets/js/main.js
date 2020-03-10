@@ -32,11 +32,6 @@ $(".hamburger").on("click", function () {
   $(this).toggleClass("is-active");
 });
 
-
-
-
-
-
 //navbar
 let activeOne = $('.navbar-nav').find('a.nav-link.active');
 
@@ -93,18 +88,18 @@ setInterval(() => {
 
 // active timeline
 
-// setInterval(() => {
-//   $('#time-1').removeClass('active-time')
-//   $('#time-2').removeClass('active-time')
-//   $('#time-3').removeClass('active-time')
-//   $('#time-4').removeClass('active-time')
-//   $('#time-5').removeClass('active-time')
-//   let random = Math.floor(Math.random() * 6) + 1;
-//   $('#time-' + random).addClass("active-time ")
-//   if(showActive==true){
+setInterval(() => {
+  $('#time-1').removeClass('active-time')
+  $('#time-2').removeClass('active-time')
+  $('#time-3').removeClass('active-time')
+  $('#time-4').removeClass('active-time')
+  $('#time-5').removeClass('active-time')
+  let random = Math.floor(Math.random() * 6) + 1;
+  $('#time-' + random).addClass("active-time ")
+  if(showActive==true){
 
-//   }
-// }, 2000)
+  }
+}, 2000)
 
 
 // active logos clientes
@@ -124,11 +119,6 @@ setInterval(() => {
 
 // fade in
 
-
-
-
-
-
 //wow animation by using with animate css
 var isiPad = (navigator.userAgent.match(/iPad/i) != null);
 if (($.browser.mobile) || (isiPad)) {
@@ -143,10 +133,6 @@ if (($.browser.mobile) || (isiPad)) {
   });
   wow.init();
 }
-
-
-
-
 
 //Function to animate slider captions 
 function doAnimations(elems) {
