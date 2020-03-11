@@ -14,7 +14,7 @@ $(function () {
 })
 // Menú fixed
 $(window).scroll(function () {
-  if ($(document).scrollTop() > 70 && ($(window).width() >= 768)) {
+  if ($(document).scrollTop() > 700 && ($(window).width() >= 768)) {
     $('.navbar-fixed-js').addClass('fixed');
     $('.nav-link').addClass('fixed-color');
     //  $('.navbar-fixed-js').addClass('navbar-none');
@@ -75,16 +75,16 @@ function changeActive(){
   
   showActive=false
 }
-setInterval(() => {
-  $('#card-1').removeClass('active-about main-about__card-line circle-active')
-  $('#card-2').removeClass('active-about main-about__card-line circle-active')
-  $('#card-3').removeClass('active-about main-about__card-line circle-active')
-  let random = Math.floor(Math.random() * 3) + 1;
-  $('#card-' + random).addClass("active-about main-about__card-line circle-active ")
-  if(showActive==true){
+// setInterval(() => {
+//   $('#card-1').removeClass('active-about main-about__card-line circle-active')
+//   $('#card-2').removeClass('active-about main-about__card-line circle-active')
+//   $('#card-3').removeClass('active-about main-about__card-line circle-active')
+//   let random = Math.floor(Math.random() * 3) + 1;
+//   $('#card-' + random).addClass("active-about main-about__card-line circle-active ")
+//   if(showActive==true){
 
-  }
-}, 3000)
+//   }
+// }, 3000)
 
 // active timeline
 

@@ -88,6 +88,7 @@ section {
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   /* Prevent scroll on narrow devices */
 }
 
@@ -1211,8 +1212,9 @@ color: #727276;
 }
 
 .main-img__icon img {
-  width: 280px;
-  margin-right: 22px;
+  width: 290px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 3px 6px #0000003b);
 }
 
 .circle {
@@ -1221,7 +1223,7 @@ color: #727276;
 }
 
 .icon-img {
-  width: 65px;
+  width: 55px;
   margin-top: -15px;
 }
 
@@ -1231,10 +1233,9 @@ color: #727276;
   background: #fff;
   cursor: pointer;
   transition: .5s;
-  https: //clinicamarquez.cl/
     border-radius: 4px;
   height: max-content;
-  https: //clinicamarquez.cl/
+
     display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -1251,7 +1252,8 @@ color: #727276;
 }
 
 .main-about__card {
-  height: 500px;
+  /* height:auto; */
+      position: relative;
   display: flex;
   justify-content: center;
 
@@ -1261,16 +1263,16 @@ color: #727276;
   display: flex;
 }
 
-/*.main-about__card:nth-child(2) {
+.main-about__card:nth-child(2) {
   transform: translateY(-100px);
 
-  }*/
+  }
 
-/*.main-about__card:nth-child(2):hover {
+.main-about__card:nth-child(2):hover {
     transform: translateY(-120px) !important;
 
   }
-  */
+ 
 .main-about__card:hover .circle {
   animation-play-state: running;
 
@@ -1287,6 +1289,10 @@ color: #727276;
   filter: none;
 }
 
+.active-about  .icon {
+  transition: .5s;
+    filter:none;
+  }
 
 .active-about [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
@@ -1334,6 +1340,14 @@ color: #727276;
   height: 100px;
   margin-top: -50px;
   background: #fff;
+  filter: grayscale(1);
+  transition: .5s;
+
+}
+
+.main-about__card:hover  .icon {
+transition: .5s;
+  filter:none;
 }
 
 .main_about__icon,
@@ -2262,6 +2276,7 @@ color: #727276;
 
 .icon-services {
   box-shadow: inset -8px 0px 9px rgba(0, 0, 0, 0.08);
+  filter: none;
 }
 
 .subtitle {
@@ -3315,16 +3330,20 @@ nav ul .active-nav a {
 .modal-close:hover {
   color: black;
 }
-
+.top{
+  margin-top: -70px;
+  position: relative;
+}
 .phone-mockup {
   position: absolute;
-  width: auto;
-  left: 40%;
-  bottom: 7px;
-  height: 464px;
-  object-fit: contain;
+  width: 250px;
+  left: 15%;
+  bottom: 0;
+  filter: drop-shadow(0px 0px 8px #0404041c);
+  /* height: -webkit-fill-available; */
+  /* object-fit: cover; */
   z-index: 1;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .phone-mockup-mac {
@@ -3339,11 +3358,11 @@ nav ul .active-nav a {
 
 .main-screen_mac .slick-slide img {
   display: block;
-  width: 70%;
+  /* width: 100%;
   margin-right: 50px;
   height: 260px;
   margin-left: 60px;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 
@@ -3351,10 +3370,16 @@ nav ul .active-nav a {
   opacity: initial;
 }
 
+
+.main-screen__portfolio_img {
+  width: 150px;
+  height: auto;
+}
+
 .main-screen_mac {
   position: absolute !important;
   /* top: 5px; */
-  top: 40px;
+  top: -35px;
   width: 100%!important;
 }
 .slick-dots li button:before {
@@ -3383,14 +3408,11 @@ nav ul .active-nav a {
 
 }
 
-
+/* 
 .main-screen .slick-slide img {
-  display: block;
-  /* width: 100%; */
-  height: fit-content;
-  /* margin-right: -30px; */
-  object-fit: cover;
-}
+  width: 100%;
+  height: 250px;
+} */
 
 /* .main-screen__portfolio_img {
   width: 220px!important;
@@ -3401,6 +3423,55 @@ nav ul .active-nav a {
   color: transparent !important;
 
 
+}
+
+.content-phone{
+  /* position: absolute; */
+  /* display: none; */
+}
+.main-screen_macbook .slick-slide img {
+  display: block;
+  width: 100%;
+  opacity: inherit;
+}
+
+.main-screen_macbook .main-screen__portfolio_img {
+    /* width: 400px!important; */
+    /* height: 350px; */
+    /* left: 73px!important;
+    top: 50px!important;
+    padding: 46px 60px 0px!important; */
+
+    padding: 47px 70px;
+}
+
+.main-screen.slick-slider {
+  margin-bottom: 30px;
+  width: 35%!important;
+  text-align: center;
+  height: 300px!important;
+  left: -30px;
+  position: absolute;
+  z-index:99999;
+}
+
+.main-screen_mac.slick-slider {
+  margin-bottom: 30px;
+  width: 100%!important;
+  text-align: center;
+  /* height: 300px!important; */
+}
+.main-screen .main-screen__portfolio_img img {
+  opacity: .3;
+  width: auto;
+}
+
+.main-screen .slick-slide img {
+    /* display: block; */
+    /* width: 85%; */
+    /* margin-right: 50px; */
+    height: 250px;
+    width: auto;
 }
 
 .main-screen .slick-dots {
@@ -3422,9 +3493,39 @@ nav ul .active-nav a {
 }
 
 .main-screen .slick-list {
-  margin-top: -100px;
-  /* margin-left: -20px; */
+  margin-top: 100px;
+  /* margin-left: 92px; */
 }
+
+.main-screen-phone{
+  background-image: url(../img/iphone-x.png);
+  background-size: 90%;
+  position: absolute;
+  /* top: -20px; */
+  bottom: -90px;
+  width: 200px;
+  height: -webkit-fill-available;
+  object-fit: cover;
+  z-index: 99999999;
+  left: -50px;
+  background-repeat: no-repeat;
+}
+.main-screen-mac{
+  background-image: url(../img/2mac.png);
+  background-size: 100%;
+  position: absolute;
+  top: 25px;
+  width: 580px;
+  height: 100%;
+  object-fit: contain;
+  z-index: 99;
+  left: -20px;
+  background-repeat: no-repeat;
+
+}
+
+
+
 
 .main-screen .slick-next {
   right: -30px;
@@ -3691,3 +3792,59 @@ nav ul .active-nav a {
 .video-xs {
   display: none;
 }
+
+
+#arrow{
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+#arrow a{
+  color: #1b2d43;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+}
+
+#arrow a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+

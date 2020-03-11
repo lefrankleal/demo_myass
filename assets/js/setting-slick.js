@@ -262,13 +262,15 @@ $('.screen-slider__porfolio').slick({
 
 
 $('.main-screen').slick({
- infinite:true,
- slidesToShow: 2,
+//  infinite:true,
+ slidesToShow: 1,
  slidesToScroll: 1,
- dots: true,
+ dots: false,
+ fade: true,
+ cssEase: 'linear',
  touchMove: true,
- centerMode:false,
- variableWidth: true,
+//  centerMode:false,
+//  variableWidth: true,
  focusOnSelect: true,
  cssEase: 'linear',
  touchMove: true,
@@ -304,18 +306,19 @@ $('.main-screen').slick({
 });
 
 
-$('.main-screen_mac').slick({
- infinite: false,
+$('.main-screen_macbook').slick({
+//  infinite: false,
  slidesToShow: 1,
  slidesToScroll: 1,
- dots: true,
- centerMode:false,
- variableWidth: true,
+ dots: false,
+//  centerMode:false,
+//  variableWidth: true,
  focusOnSelect: true,
  cssEase: 'linear',
+ fade: true,
  touchMove: true,
- autoplay:true,
- arrows: false,
+ autoplay:false,
+ arrows: true,
  responsive: [{
   breakpoint: 1200,
   settings: {
