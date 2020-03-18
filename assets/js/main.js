@@ -141,7 +141,7 @@ function doAnimations(elems) {
 
   elems.each(function () {
     var $this = $(this),
-      $animationType = $this.data('animation');
+    $animationType = $this.data('animation');
     $this.addClass($animationType).one(animEndEv, function () {
       $this.removeClass($animationType);
     });
@@ -150,7 +150,7 @@ function doAnimations(elems) {
 
 //Variables on page load 
 var $myCarousel = $('.caption-slider'),
-  $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
 
 //Initialize carousel 
 $myCarousel.carousel();
@@ -195,11 +195,11 @@ $(function () {
 //   $('.modal').click(function () {
 //     $(".main-cafe_grid").removeClass("main-cafe__img-none");
 //   });
-  
+
 //   $('#modal-none').click(function () {
 //     $(".main-cafe_grid").addClass("main-cafe__img-none");
 //   });
- 
+
 // });
 
 /**Responsive**/
@@ -214,7 +214,7 @@ if ($(window).width() < 767) {
 
 // Full screen pre loader
 $(window).load(function () {
-  $("#pre-loader").delay(500).fadeOut(2000);
+  $("#pre-loader").delay(5000).fadeOut(2000);
   $(".preload-logo").addClass('zoomOutUp');
   $(".loader").addClass('zoomOutDown');
 });
