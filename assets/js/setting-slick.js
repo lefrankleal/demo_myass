@@ -263,20 +263,20 @@ $('.screen-slider__porfolio').slick({
 // para app web
 $('.main-screen').slick({
 //  infinite:true,
- slidesToShow: 1,
- slidesToScroll: 1,
- dots: false,
- fade: true,
- cssEase: 'linear',
- touchMove: true,
+slidesToShow: 1,
+slidesToScroll: 1,
+dots: false,
+fade: true,
+cssEase: 'linear',
+touchMove: true,
 //  centerMode:false,
 //  variableWidth: true,
- focusOnSelect: true,
- cssEase: 'linear',
- touchMove: true,
- autoplay:true,
- arrows: true,
- responsive: [{
+focusOnSelect: true,
+cssEase: 'linear',
+touchMove: true,
+autoplay:true,
+arrows: false,
+responsive: [{
   breakpoint: 1200,
   settings: {
     slidesToShow: 2,
@@ -309,18 +309,18 @@ $('.main-screen').slick({
 
 $('.main-screen_macbook').slick({
 //  infinite: false,
- slidesToShow: 1,
- slidesToScroll: 1,
- dots: false,
+slidesToShow: 1,
+slidesToScroll: 1,
+dots: false,
 //  centerMode:false,
 //  variableWidth: true,
- focusOnSelect: true,
- cssEase: 'linear',
- fade: true,
- touchMove: true,
- autoplay:true,
- arrows: true,
- responsive: [{
+focusOnSelect: true,
+cssEase: 'linear',
+fade: true,
+touchMove: true,
+autoplay:true,
+arrows: true,
+responsive: [{
   breakpoint: 1200,
   settings: {
     slidesToShow: 2,
@@ -353,19 +353,19 @@ $('.main-screen_macbook').slick({
 // para app mivo
 $('.main-screen--movil').slick({
   //  infinite:true,
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
 
-   touchMove: true,
+  touchMove: true,
   //  centerMode:false,
-   variableWidth: true,
-   focusOnSelect: true,
+  variableWidth: true,
+  focusOnSelect: true,
   
-   touchMove: true,
-   autoplay:false,
-   arrows: false,
-   responsive: [{
+  touchMove: true,
+  autoplay:false,
+  arrows: false,
+  responsive: [{
     breakpoint: 1200,
     settings: {
       slidesToShow: 2,
@@ -392,7 +392,7 @@ $('.main-screen--movil').slick({
     }
   }
   ]
-  });
+});
 
 
 
