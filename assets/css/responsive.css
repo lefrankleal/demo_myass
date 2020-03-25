@@ -27,10 +27,95 @@
   .navbar {
     border-radius: 0px;
   }
+  .navbar {
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    border-radius: 10px;
+  }
+  .main-brand {
+    display: inherit;
+  }
+  .navbar-brand img {
+    width: 50%;
+  }
 }
 
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .content-phone {
+    /* position: absolute; */
+    /* display: none; */
+    width: 90%;
+    margin-left: 50px;
+}
+  .screen-admin {
+
+    display: none;
+}
+  .caption-desc p {
+   
+    padding-right: 0;
+    margin-bottom: 50px;
+ 
+    text-align: justify;
+}
+  .caption-slider .carousel-indicators {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  .caption-slider .carousel-indicators li {
+    padding-right: 0;
+    display: inline;
+    justify-content: center !important;
+    align-items: center !important;
+}
+  .main-tech__content--portfolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  .main-client__item{
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .main-screen_macbook .main-screen__portfolio_img {
+    /* width: 400px!important; */
+    /* height: 350px; */
+    padding: 0;
+}
+.top {
+  margin-top: -70px;
+  position: relative;
+  margin-bottom: 50px;
+}
+  .main-screen.slick-slider,.main-screen-phone {
+ 
+    display: none;
+}
+  .hero2 , .hero, .hero4, .hero1 {
+    position: initial;
+
+}
+  .custom-animation {
+    backface-visibility: initial;
+    animation: none;
+    animation-delay: initial;
+    transition: none;
+    user-select: none;
+}
+.custom-animation3 {
+  backface-visibility: initial;
+  animation: none;
+  animation-delay: initial;
+  transition: none;
+  user-select: none;
+}
   .main-screen-mac {
    
     top: 25px;
@@ -38,7 +123,7 @@
     height: 100%;
     object-fit: contain;
     z-index: 0;
-    left: 0;
+    left: -3%; 
 
 }
  .main-about__card {
@@ -299,7 +384,7 @@
   }
 
   .portfolio-screen-content {
-    margin-bottom: 60%;
+    margin-bottom: 30%;
   }
 
   .caption-slider .carousel-indicators {
@@ -536,6 +621,47 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .top {
+    margin-top: -100px;
+    position: relative;
+    margin-bottom: 50px;
+}
+  .main-screen-mac {
+    height: 500PX;
+    display: none;
+}
+  .main-screen_macbook .main-screen__portfolio_img {
+
+    padding: 0;
+}
+  .main-screen-mac {
+ 
+    height: 500PX;
+
+}
+.screen-admin {
+
+  DISPLAY: NONE;
+}
+.content-phone {
+  /* position: absolute; */
+  /* display: none; */
+  width: 79%;
+  margin-left: 51px;
+}
+.main-screen-phone--movil {
+
+  left: 216px;
+
+}
+.title-general-porfolio {
+  margin-bottom: 0;
+
+}
+  /* .content-phone {
+ 
+    display: none;
+} */
   
   .circle-container:not(.circle-responsive) {}
 
@@ -676,9 +802,17 @@
   }
   .main-about__grid {
     
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     
   }
+  .main-about__card:nth-child(2) {
+    transform: initial;
+}
+.main-about__card {
+
+  margin-bottom: 50px;
+}
+
   .timeline-block {
     width: 20%;
     max-width: none;

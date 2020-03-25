@@ -332,7 +332,7 @@ responsive: [{
 {
   breakpoint: 900,
   settings: {
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 2
   }
 },
